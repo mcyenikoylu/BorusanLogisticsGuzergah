@@ -52,12 +52,14 @@
             this.bvBtnExit = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
             this.backstageViewClientControl4 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.bvTabReports = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.menuWayPoints1 = new BorusanLogisticsGuzergah.MenuWayPoints();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barAndDockingController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.galleryDropDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).BeginInit();
             this.backstageViewControl1.SuspendLayout();
+            this.backstageViewClientControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -129,6 +131,8 @@
             this.xtraTabbedMdiManager1.HeaderButtonsShowMode = DevExpress.XtraTab.TabButtonShowMode.Always;
             this.xtraTabbedMdiManager1.HeaderLocation = DevExpress.XtraTab.TabHeaderLocation.Bottom;
             this.xtraTabbedMdiManager1.MdiParent = this;
+            this.xtraTabbedMdiManager1.SelectedPageChanged += new System.EventHandler(this.xtraTabbedMdiManager1_SelectedPageChanged);
+            this.xtraTabbedMdiManager1.PageAdded += new DevExpress.XtraTabbedMdi.MdiTabPageEventHandler(this.xtraTabbedMdiManager1_PageAdded);
             // 
             // galleryDropDown1
             // 
@@ -153,10 +157,13 @@
             resources.ApplyResources(this.backstageViewControl1, "backstageViewControl1");
             this.backstageViewControl1.Name = "backstageViewControl1";
             this.backstageViewControl1.OwnerControl = this.ribbonControl1;
+            this.backstageViewControl1.SelectedTab = this.bvTabWayPoints;
+            this.backstageViewControl1.SelectedTabIndex = 0;
             this.backstageViewControl1.Style = DevExpress.XtraBars.Ribbon.BackstageViewStyle.Office2013;
             // 
             // backstageViewClientControl1
             // 
+            this.backstageViewClientControl1.Controls.Add(this.menuWayPoints1);
             resources.ApplyResources(this.backstageViewClientControl1, "backstageViewClientControl1");
             this.backstageViewClientControl1.Name = "backstageViewClientControl1";
             // 
@@ -176,6 +183,7 @@
             this.bvTabWayPoints.ContentControl = this.backstageViewClientControl1;
             this.bvTabWayPoints.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("bvTabWayPoints.ImageOptions.ItemNormal.Image")));
             this.bvTabWayPoints.Name = "bvTabWayPoints";
+            this.bvTabWayPoints.Selected = true;
             // 
             // bvTabRoadSurvey
             // 
@@ -223,6 +231,12 @@
             this.bvTabReports.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("bvTabReports.ImageOptions.ItemNormal.Image")));
             this.bvTabReports.Name = "bvTabReports";
             // 
+            // menuWayPoints1
+            // 
+            resources.ApplyResources(this.menuWayPoints1, "menuWayPoints1");
+            this.menuWayPoints1.Name = "menuWayPoints1";
+            this.menuWayPoints1.Ribbon = null;
+            // 
             // Form1
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
@@ -243,6 +257,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.galleryDropDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).EndInit();
             this.backstageViewControl1.ResumeLayout(false);
+            this.backstageViewClientControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,6 +287,7 @@
         private DevExpress.XtraBars.Ribbon.BackstageViewButtonItem bvBtnExit;
         private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl4;
         private DevExpress.XtraBars.Ribbon.BackstageViewTabItem bvTabReports;
+        private MenuWayPoints menuWayPoints1;
     }
 }
 

@@ -118,7 +118,7 @@
             galleryItem1.Description = "description description description description description ";
             galleryItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             galleryItem1.ImageOptions.ImageIndex = 1;
-            galleryItem1.Value = "10";
+            galleryItem1.Value = "100";
             galleryItemGroup1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             galleryItem1});
             this.galleryControl1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {

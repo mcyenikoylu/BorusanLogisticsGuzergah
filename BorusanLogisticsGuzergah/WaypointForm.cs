@@ -11,9 +11,9 @@ using DevExpress.XtraBars;
 
 namespace BorusanLogisticsGuzergah
 {
-    public partial class WayPointsForm : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class WaypointForm : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public WayPointsForm()
+        public WaypointForm()
         {
             InitializeComponent();
         }
