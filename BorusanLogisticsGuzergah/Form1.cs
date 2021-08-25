@@ -15,5 +15,16 @@ namespace BorusanLogisticsGuzergah
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            barStaticItem2.Caption = "Version " + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+
+        }
+
+        private void ribbonControl1_ApplicationButtonClick(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
