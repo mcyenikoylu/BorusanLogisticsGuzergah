@@ -97,6 +97,8 @@
     <EmbeddedResource Include="WaypointForm.resx">
       <DependentUpon>WaypointForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Data\Il.shp" />
+    <None Include="Data\switzerland.shp" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

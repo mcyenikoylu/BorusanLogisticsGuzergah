@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WaypointForm));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barCheckItem1 = new DevExpress.XtraBars.BarCheckItem();
@@ -35,22 +36,24 @@
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
-            this.tabGrid = new DevExpress.XtraTab.XtraTabPage();
             this.tabMap = new DevExpress.XtraTab.XtraTabPage();
+            this.mapControl1 = new DevExpress.XtraMap.MapControl();
+            this.tabGrid = new DevExpress.XtraTab.XtraTabPage();
             this.gridSplitContainer1 = new DevExpress.XtraGrid.GridSplitContainer();
             this.gridSplitContainer1Grid = new DevExpress.XtraGrid.GridControl();
             this.gridSplitContainer1View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.mapControl1 = new DevExpress.XtraMap.MapControl();
+            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
-            this.tabGrid.SuspendLayout();
             this.tabMap.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mapControl1)).BeginInit();
+            this.tabGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1)).BeginInit();
             this.gridSplitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1Grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1View)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mapControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -107,19 +110,27 @@
             this.tabGrid,
             this.tabMap});
             // 
-            // tabGrid
-            // 
-            this.tabGrid.Controls.Add(this.gridSplitContainer1);
-            this.tabGrid.Name = "tabGrid";
-            this.tabGrid.Size = new System.Drawing.Size(695, 325);
-            this.tabGrid.Text = "Grid";
-            // 
             // tabMap
             // 
             this.tabMap.Controls.Add(this.mapControl1);
             this.tabMap.Name = "tabMap";
             this.tabMap.Size = new System.Drawing.Size(695, 325);
             this.tabMap.Text = "Map";
+            // 
+            // mapControl1
+            // 
+            this.mapControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mapControl1.Location = new System.Drawing.Point(0, 0);
+            this.mapControl1.Name = "mapControl1";
+            this.mapControl1.Size = new System.Drawing.Size(695, 325);
+            this.mapControl1.TabIndex = 0;
+            // 
+            // tabGrid
+            // 
+            this.tabGrid.Controls.Add(this.gridSplitContainer1);
+            this.tabGrid.Name = "tabGrid";
+            this.tabGrid.Size = new System.Drawing.Size(695, 325);
+            this.tabGrid.Text = "Grid";
             // 
             // gridSplitContainer1
             // 
@@ -149,13 +160,10 @@
             this.gridSplitContainer1View.GridControl = this.gridSplitContainer1Grid;
             this.gridSplitContainer1View.Name = "gridSplitContainer1View";
             // 
-            // mapControl1
+            // popupMenu1
             // 
-            this.mapControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mapControl1.Location = new System.Drawing.Point(0, 0);
-            this.mapControl1.Name = "mapControl1";
-            this.mapControl1.Size = new System.Drawing.Size(695, 325);
-            this.mapControl1.TabIndex = 0;
+            this.popupMenu1.Name = "popupMenu1";
+            this.popupMenu1.Ribbon = this.ribbon;
             // 
             // WaypointForm
             // 
@@ -174,13 +182,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
-            this.tabGrid.ResumeLayout(false);
             this.tabMap.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.mapControl1)).EndInit();
+            this.tabGrid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1)).EndInit();
             this.gridSplitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1Grid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1View)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mapControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,5 +209,6 @@
         private DevExpress.XtraGrid.GridControl gridSplitContainer1Grid;
         private DevExpress.XtraGrid.Views.Grid.GridView gridSplitContainer1View;
         private DevExpress.XtraMap.MapControl mapControl1;
+        private DevExpress.XtraBars.PopupMenu popupMenu1;
     }
 }

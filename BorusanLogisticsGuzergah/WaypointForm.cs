@@ -31,11 +31,11 @@ namespace BorusanLogisticsGuzergah
                 }
             });
             mapControl1.ZoomLevel = 6.0;
-            mapControl1.CenterPoint = new GeoPoint(39, 35);
+            mapControl1.CenterPoint = new GeoPoint(39, 36);
+            mapControl1.MapItemClick += OnMapItemClick;
 
             // Create a layer to show vector items.
-            VectorItemsLayer itemsLayer = new VectorItemsLayer()
-            {
+            VectorItemsLayer itemsLayer = new VectorItemsLayer() {
                 Data = CreateData(),
                 Colorizer = CreateColorizer()
             };
@@ -44,6 +44,19 @@ namespace BorusanLogisticsGuzergah
 
             // Show a color legend.
             mapControl1.Legends.Add(new ColorListLegend() { Layer = itemsLayer });
+        }
+
+        private void OnMapItemClick(object sender, MapItemClickEventArgs e)
+        {
+            //if (e.MouseArgs.Button == MouseButtons.Right && e.Item is MapPath)
+            //{
+            //    popupMenu1.ShowPopup(Cursor.Position);
+            //}
+
+            string latitude = ((DevExpress.XtraMap.GeoPoint)((DevExpress.XtraMap.MapBubble)e.Item).Location).Latitude.ToString();
+            string longitude = ((DevExpress.XtraMap.GeoPoint)((DevExpress.XtraMap.MapBubble)e.Item).Location).Longitude.ToString();
+
+            MessageBox.Show("latitude: "+ latitude + " longitude: "+ longitude);
         }
 
         #region #CreateBubbles
@@ -58,8 +71,8 @@ namespace BorusanLogisticsGuzergah
             {
                 Argument = "A",
                 Value = 200,
-                Location = new GeoPoint(-45, -60),
-                Size = 20,
+                Location = new GeoPoint(38.4780526, 27.1880704),
+                Size = 10,
                 Group = 1,
                 MarkerType = MarkerType.Diamond
             });
@@ -67,8 +80,8 @@ namespace BorusanLogisticsGuzergah
             {
                 Argument = "B",
                 Value = 400,
-                Location = new GeoPoint(-45, 0),
-                Size = 40,
+                Location = new GeoPoint(38.4811434, 27.1681577),
+                Size = 10,
                 Group = 2,
                 MarkerType = MarkerType.Plus
             });
@@ -76,8 +89,8 @@ namespace BorusanLogisticsGuzergah
             {
                 Argument = "C",
                 Value = 800,
-                Location = new GeoPoint(-45, 60),
-                Size = 80,
+                Location = new GeoPoint(38.4814793, 27.153824),
+                Size = 10,
                 Group = 1,
                 MarkerType = MarkerType.Cross
             });
@@ -85,8 +98,8 @@ namespace BorusanLogisticsGuzergah
             {
                 Argument = "D",
                 Value = 800,
-                Location = new GeoPoint(-45, 90),
-                Size = 30,
+                Location = new GeoPoint(38.48588, 27.1356279),
+                Size = 10,
                 Group = 3,
                 MarkerType = MarkerType.Circle
             });
