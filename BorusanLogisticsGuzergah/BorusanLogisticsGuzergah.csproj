@@ -57,6 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BubbleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BubbleForm.Designer.cs">
+      <DependentUpon>BubbleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     <Compile Include="WaypointForm.Designer.cs">
       <DependentUpon>WaypointForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BubbleForm.resx">
+      <DependentUpon>BubbleForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +124,10 @@
   <ItemGroup>
     <Content Include="Data\DashboardEnergyStatictics.xml" />
     <Content Include="Data\EuropeEnergyStatictics.xml" />
+    <Content Include="Image\1.png" />
+    <Content Include="Image\2.png" />
+    <Content Include="Image\3.png" />
+    <Content Include="Image\4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

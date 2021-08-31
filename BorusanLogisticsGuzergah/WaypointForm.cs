@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraMap;
+using DevExpress.Utils;
+using System.Data.SqlClient;
 
 namespace BorusanLogisticsGuzergah
 {
@@ -34,18 +36,55 @@ namespace BorusanLogisticsGuzergah
             mapControl1.CenterPoint = new GeoPoint(39, 36);
             mapControl1.MapItemClick += OnMapItemClick;
 
+            ToolTipController toolTipController = new ToolTipController();
+            toolTipController.BeforeShow += OnBeforeShowToolTip;
+            mapControl1.ToolTipController = toolTipController;
+
             // Create a layer to show vector items.
             VectorItemsLayer itemsLayer = new VectorItemsLayer() {
                 Data = CreateData(),
-                Colorizer = CreateColorizer()
+                Colorizer = CreateColorizer(),
+                ToolTipPattern = "{NAME}: ${GDP_MD_EST:#,0}M" // "%A0%: %V0%\r\n %A1%: %V1%\r\n %A2%: %V2%"
             };
 
             mapControl1.Layers.Add(itemsLayer);
 
             // Show a color legend.
             mapControl1.Legends.Add(new ColorListLegend() { Layer = itemsLayer });
+
+            
         }
 
+        private void OnBeforeShowToolTip(object sender, ToolTipControllerShowEventArgs e)
+        {
+            if (!(e.SelectedObject is MapPie mapPie)) return;
+            e.Title = mapPie.Argument.ToString();
+            e.ToolTip = BuildSegmentsTooltip(mapPie.Segments);
+        }
+
+        private string BuildSegmentsTooltip(PieSegmentCollection segments)
+        {
+            if (segments.Count == 0) return String.Empty;
+            var segment = segments[0];
+            var builder = new StringBuilder()
+                .Append(segment.Argument)
+                .Append(": ")
+                .Append(segment.Value);
+            for (int i = 1; i < segments.Count; i++)
+            {
+                segment = segments[i];
+                builder.Append(Environment.NewLine)
+                       .Append(segment.Argument)
+                       .Append(": ")
+                       .Append(segment.Value);
+            }
+            return builder.ToString();
+        }
+
+        public static SqlConnection dbLocal = new SqlConnection();
+        public static string LocalDataSource = "(LocalDb)\\MSSQLLocalDB";
+        public static string LocalDatabase = "BLGDB";
+        public static string LocalAttachDbFilename = "|DataDirectory|\\BLGDB.mdf";
         private void OnMapItemClick(object sender, MapItemClickEventArgs e)
         {
             //if (e.MouseArgs.Button == MouseButtons.Right && e.Item is MapPath)
@@ -55,8 +94,38 @@ namespace BorusanLogisticsGuzergah
 
             string latitude = ((DevExpress.XtraMap.GeoPoint)((DevExpress.XtraMap.MapBubble)e.Item).Location).Latitude.ToString();
             string longitude = ((DevExpress.XtraMap.GeoPoint)((DevExpress.XtraMap.MapBubble)e.Item).Location).Longitude.ToString();
+            //popupMenu1.ShowPopup(Cursor.Position);
+            //MessageBox.Show("latitude: "+ latitude + " longitude: "+ longitude);
 
-            MessageBox.Show("latitude: "+ latitude + " longitude: "+ longitude);
+            BubbleForm frm = new BubbleForm(latitude, longitude);
+            frm.ShowDialog();
+
+
+
+        }
+
+        public static bool ConnDBLocal(bool Connection)
+        {
+            try
+            {
+                if (Connection)
+                {
+                    string conn = "data source=" + LocalDataSource + ";AttachDbFilename=" + LocalAttachDbFilename + ";Initial Catalog=" + LocalDatabase + ";Integrated Security=True;";
+                    dbLocal.ConnectionString = conn;
+                    dbLocal.Open();
+                    return true;
+                }
+                else
+                {
+                    dbLocal.Close();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                //ExceptionMessage = ex.Message;
+                return false;
+            }
         }
 
         #region #CreateBubbles
