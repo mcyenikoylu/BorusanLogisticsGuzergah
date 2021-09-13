@@ -31,7 +31,21 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
             this.barAndDockingController1 = new DevExpress.XtraBars.BarAndDockingController(this.components);
+            this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.menuWayPoints1 = new BorusanLogisticsGuzergah.MenuWayPoints();
+            this.backstageViewClientControl2 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.backstageViewClientControl4 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.backstageViewClientControl3 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.bvTabWayPoints = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.bvTabRoadSurvey = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.bvTabReports = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.backstageViewItemSeparator1 = new DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator();
+            this.bvTabSettings = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.backstageViewItemSeparator2 = new DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator();
+            this.bvBtnAbout = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
+            this.bvBtnExit = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
             this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
             this.barStaticItem2 = new DevExpress.XtraBars.BarStaticItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -39,27 +53,15 @@
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.galleryDropDown1 = new DevExpress.XtraBars.Ribbon.GalleryDropDown(this.components);
-            this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
-            this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.backstageViewClientControl2 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.backstageViewClientControl3 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.bvTabWayPoints = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
-            this.bvTabRoadSurvey = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
-            this.backstageViewItemSeparator1 = new DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator();
-            this.bvTabSettings = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
-            this.backstageViewItemSeparator2 = new DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator();
-            this.bvBtnAbout = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
-            this.bvBtnExit = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
-            this.backstageViewClientControl4 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.bvTabReports = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
-            this.menuWayPoints1 = new BorusanLogisticsGuzergah.MenuWayPoints();
+            this.menuRoadSurvey1 = new BorusanLogisticsGuzergah.MenuRoadSurvey();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barAndDockingController1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.galleryDropDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).BeginInit();
             this.backstageViewControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.barAndDockingController1)).BeginInit();
             this.backstageViewClientControl1.SuspendLayout();
+            this.backstageViewClientControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.galleryDropDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -86,6 +88,105 @@
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             this.ribbonControl1.ApplicationButtonClick += new System.EventHandler(this.ribbonControl1_ApplicationButtonClick);
+            // 
+            // backstageViewControl1
+            // 
+            this.backstageViewControl1.Controller = this.barAndDockingController1;
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl1);
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl2);
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl4);
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl3);
+            this.backstageViewControl1.Items.Add(this.bvTabWayPoints);
+            this.backstageViewControl1.Items.Add(this.bvTabRoadSurvey);
+            this.backstageViewControl1.Items.Add(this.bvTabReports);
+            this.backstageViewControl1.Items.Add(this.backstageViewItemSeparator1);
+            this.backstageViewControl1.Items.Add(this.bvTabSettings);
+            this.backstageViewControl1.Items.Add(this.backstageViewItemSeparator2);
+            this.backstageViewControl1.Items.Add(this.bvBtnAbout);
+            this.backstageViewControl1.Items.Add(this.bvBtnExit);
+            resources.ApplyResources(this.backstageViewControl1, "backstageViewControl1");
+            this.backstageViewControl1.Name = "backstageViewControl1";
+            this.backstageViewControl1.OwnerControl = this.ribbonControl1;
+            this.backstageViewControl1.SelectedTab = this.bvTabRoadSurvey;
+            this.backstageViewControl1.SelectedTabIndex = 1;
+            this.backstageViewControl1.Style = DevExpress.XtraBars.Ribbon.BackstageViewStyle.Office2013;
+            // 
+            // backstageViewClientControl1
+            // 
+            this.backstageViewClientControl1.Controls.Add(this.menuWayPoints1);
+            resources.ApplyResources(this.backstageViewClientControl1, "backstageViewClientControl1");
+            this.backstageViewClientControl1.Name = "backstageViewClientControl1";
+            // 
+            // menuWayPoints1
+            // 
+            resources.ApplyResources(this.menuWayPoints1, "menuWayPoints1");
+            this.menuWayPoints1.Name = "menuWayPoints1";
+            this.menuWayPoints1.Ribbon = null;
+            // 
+            // backstageViewClientControl2
+            // 
+            this.backstageViewClientControl2.Controls.Add(this.menuRoadSurvey1);
+            resources.ApplyResources(this.backstageViewClientControl2, "backstageViewClientControl2");
+            this.backstageViewClientControl2.Name = "backstageViewClientControl2";
+            // 
+            // backstageViewClientControl4
+            // 
+            resources.ApplyResources(this.backstageViewClientControl4, "backstageViewClientControl4");
+            this.backstageViewClientControl4.Name = "backstageViewClientControl4";
+            // 
+            // backstageViewClientControl3
+            // 
+            resources.ApplyResources(this.backstageViewClientControl3, "backstageViewClientControl3");
+            this.backstageViewClientControl3.Name = "backstageViewClientControl3";
+            // 
+            // bvTabWayPoints
+            // 
+            resources.ApplyResources(this.bvTabWayPoints, "bvTabWayPoints");
+            this.bvTabWayPoints.ContentControl = this.backstageViewClientControl1;
+            this.bvTabWayPoints.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("bvTabWayPoints.ImageOptions.ItemNormal.Image")));
+            this.bvTabWayPoints.Name = "bvTabWayPoints";
+            // 
+            // bvTabRoadSurvey
+            // 
+            resources.ApplyResources(this.bvTabRoadSurvey, "bvTabRoadSurvey");
+            this.bvTabRoadSurvey.ContentControl = this.backstageViewClientControl2;
+            this.bvTabRoadSurvey.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("bvTabRoadSurvey.ImageOptions.ItemNormal.Image")));
+            this.bvTabRoadSurvey.Name = "bvTabRoadSurvey";
+            this.bvTabRoadSurvey.Selected = true;
+            // 
+            // bvTabReports
+            // 
+            resources.ApplyResources(this.bvTabReports, "bvTabReports");
+            this.bvTabReports.ContentControl = this.backstageViewClientControl4;
+            this.bvTabReports.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("bvTabReports.ImageOptions.ItemNormal.Image")));
+            this.bvTabReports.Name = "bvTabReports";
+            // 
+            // backstageViewItemSeparator1
+            // 
+            this.backstageViewItemSeparator1.Name = "backstageViewItemSeparator1";
+            // 
+            // bvTabSettings
+            // 
+            resources.ApplyResources(this.bvTabSettings, "bvTabSettings");
+            this.bvTabSettings.ContentControl = this.backstageViewClientControl3;
+            this.bvTabSettings.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("bvTabSettings.ImageOptions.ItemNormal.Image")));
+            this.bvTabSettings.Name = "bvTabSettings";
+            // 
+            // backstageViewItemSeparator2
+            // 
+            this.backstageViewItemSeparator2.Name = "backstageViewItemSeparator2";
+            // 
+            // bvBtnAbout
+            // 
+            resources.ApplyResources(this.bvBtnAbout, "bvBtnAbout");
+            this.bvBtnAbout.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("bvBtnAbout.ImageOptions.ItemNormal.Image")));
+            this.bvBtnAbout.Name = "bvBtnAbout";
+            // 
+            // bvBtnExit
+            // 
+            resources.ApplyResources(this.bvBtnExit, "bvBtnExit");
+            this.bvBtnExit.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("bvBtnExit.ImageOptions.ItemNormal.Image")));
+            this.bvBtnExit.Name = "bvBtnExit";
             // 
             // barStaticItem1
             // 
@@ -139,103 +240,10 @@
             this.galleryDropDown1.Name = "galleryDropDown1";
             this.galleryDropDown1.Ribbon = this.ribbonControl1;
             // 
-            // backstageViewControl1
+            // menuRoadSurvey1
             // 
-            this.backstageViewControl1.Controller = this.barAndDockingController1;
-            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl1);
-            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl2);
-            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl4);
-            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl3);
-            this.backstageViewControl1.Items.Add(this.bvTabWayPoints);
-            this.backstageViewControl1.Items.Add(this.bvTabRoadSurvey);
-            this.backstageViewControl1.Items.Add(this.bvTabReports);
-            this.backstageViewControl1.Items.Add(this.backstageViewItemSeparator1);
-            this.backstageViewControl1.Items.Add(this.bvTabSettings);
-            this.backstageViewControl1.Items.Add(this.backstageViewItemSeparator2);
-            this.backstageViewControl1.Items.Add(this.bvBtnAbout);
-            this.backstageViewControl1.Items.Add(this.bvBtnExit);
-            resources.ApplyResources(this.backstageViewControl1, "backstageViewControl1");
-            this.backstageViewControl1.Name = "backstageViewControl1";
-            this.backstageViewControl1.OwnerControl = this.ribbonControl1;
-            this.backstageViewControl1.SelectedTab = this.bvTabWayPoints;
-            this.backstageViewControl1.SelectedTabIndex = 0;
-            this.backstageViewControl1.Style = DevExpress.XtraBars.Ribbon.BackstageViewStyle.Office2013;
-            // 
-            // backstageViewClientControl1
-            // 
-            this.backstageViewClientControl1.Controls.Add(this.menuWayPoints1);
-            resources.ApplyResources(this.backstageViewClientControl1, "backstageViewClientControl1");
-            this.backstageViewClientControl1.Name = "backstageViewClientControl1";
-            // 
-            // backstageViewClientControl2
-            // 
-            resources.ApplyResources(this.backstageViewClientControl2, "backstageViewClientControl2");
-            this.backstageViewClientControl2.Name = "backstageViewClientControl2";
-            // 
-            // backstageViewClientControl3
-            // 
-            resources.ApplyResources(this.backstageViewClientControl3, "backstageViewClientControl3");
-            this.backstageViewClientControl3.Name = "backstageViewClientControl3";
-            // 
-            // bvTabWayPoints
-            // 
-            resources.ApplyResources(this.bvTabWayPoints, "bvTabWayPoints");
-            this.bvTabWayPoints.ContentControl = this.backstageViewClientControl1;
-            this.bvTabWayPoints.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("bvTabWayPoints.ImageOptions.ItemNormal.Image")));
-            this.bvTabWayPoints.Name = "bvTabWayPoints";
-            this.bvTabWayPoints.Selected = true;
-            // 
-            // bvTabRoadSurvey
-            // 
-            resources.ApplyResources(this.bvTabRoadSurvey, "bvTabRoadSurvey");
-            this.bvTabRoadSurvey.ContentControl = this.backstageViewClientControl2;
-            this.bvTabRoadSurvey.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("bvTabRoadSurvey.ImageOptions.ItemNormal.Image")));
-            this.bvTabRoadSurvey.Name = "bvTabRoadSurvey";
-            // 
-            // backstageViewItemSeparator1
-            // 
-            this.backstageViewItemSeparator1.Name = "backstageViewItemSeparator1";
-            // 
-            // bvTabSettings
-            // 
-            resources.ApplyResources(this.bvTabSettings, "bvTabSettings");
-            this.bvTabSettings.ContentControl = this.backstageViewClientControl3;
-            this.bvTabSettings.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("bvTabSettings.ImageOptions.ItemNormal.Image")));
-            this.bvTabSettings.Name = "bvTabSettings";
-            // 
-            // backstageViewItemSeparator2
-            // 
-            this.backstageViewItemSeparator2.Name = "backstageViewItemSeparator2";
-            // 
-            // bvBtnAbout
-            // 
-            resources.ApplyResources(this.bvBtnAbout, "bvBtnAbout");
-            this.bvBtnAbout.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("bvBtnAbout.ImageOptions.ItemNormal.Image")));
-            this.bvBtnAbout.Name = "bvBtnAbout";
-            // 
-            // bvBtnExit
-            // 
-            resources.ApplyResources(this.bvBtnExit, "bvBtnExit");
-            this.bvBtnExit.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("bvBtnExit.ImageOptions.ItemNormal.Image")));
-            this.bvBtnExit.Name = "bvBtnExit";
-            // 
-            // backstageViewClientControl4
-            // 
-            resources.ApplyResources(this.backstageViewClientControl4, "backstageViewClientControl4");
-            this.backstageViewClientControl4.Name = "backstageViewClientControl4";
-            // 
-            // bvTabReports
-            // 
-            resources.ApplyResources(this.bvTabReports, "bvTabReports");
-            this.bvTabReports.ContentControl = this.backstageViewClientControl4;
-            this.bvTabReports.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("bvTabReports.ImageOptions.ItemNormal.Image")));
-            this.bvTabReports.Name = "bvTabReports";
-            // 
-            // menuWayPoints1
-            // 
-            resources.ApplyResources(this.menuWayPoints1, "menuWayPoints1");
-            this.menuWayPoints1.Name = "menuWayPoints1";
-            this.menuWayPoints1.Ribbon = null;
+            resources.ApplyResources(this.menuRoadSurvey1, "menuRoadSurvey1");
+            this.menuRoadSurvey1.Name = "menuRoadSurvey1";
             // 
             // Form1
             // 
@@ -252,12 +260,13 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barAndDockingController1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.galleryDropDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).EndInit();
             this.backstageViewControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.barAndDockingController1)).EndInit();
             this.backstageViewClientControl1.ResumeLayout(false);
+            this.backstageViewClientControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.galleryDropDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,6 +297,7 @@
         private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl4;
         private DevExpress.XtraBars.Ribbon.BackstageViewTabItem bvTabReports;
         private MenuWayPoints menuWayPoints1;
+        private MenuRoadSurvey menuRoadSurvey1;
     }
 }
 

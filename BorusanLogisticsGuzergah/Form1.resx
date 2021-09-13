@@ -155,11 +155,36 @@
   <data name="&gt;&gt;backstageViewClientControl1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="menuRoadSurvey1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="menuRoadSurvey1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuRoadSurvey1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 249</value>
+  </data>
+  <data name="menuRoadSurvey1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;menuRoadSurvey1.Name" xml:space="preserve">
+    <value>menuRoadSurvey1</value>
+  </data>
+  <data name="&gt;&gt;menuRoadSurvey1.Type" xml:space="preserve">
+    <value>BorusanLogisticsGuzergah.MenuRoadSurvey, BorusanLogisticsGuzergah, Version=1.0.0.2, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;menuRoadSurvey1.Parent" xml:space="preserve">
+    <value>backstageViewClientControl2</value>
+  </data>
+  <data name="&gt;&gt;menuRoadSurvey1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="backstageViewClientControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>188, 63</value>
+    <value>156, 63</value>
   </data>
   <data name="backstageViewClientControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>375, 249</value>
+    <value>407, 249</value>
   </data>
   <data name="backstageViewClientControl2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -177,10 +202,10 @@
     <value>2</value>
   </data>
   <data name="backstageViewClientControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>156, 63</value>
+    <value>156, 62</value>
   </data>
   <data name="backstageViewClientControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>407, 249</value>
+    <value>408, 251</value>
   </data>
   <data name="backstageViewClientControl4.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -330,20 +355,20 @@
   </data>
   <data name="bvTabReports.ImageOptions.ItemNormal.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
 </value>
   </data>
   <data name="bvTabSettings.Caption" xml:space="preserve">
@@ -501,6 +526,30 @@
   </data>
   <data name="&gt;&gt;ribbonControl1.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="menuWayPoints1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="menuWayPoints1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuWayPoints1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 249</value>
+  </data>
+  <data name="menuWayPoints1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;menuWayPoints1.Name" xml:space="preserve">
+    <value>menuWayPoints1</value>
+  </data>
+  <data name="&gt;&gt;menuWayPoints1.Type" xml:space="preserve">
+    <value>BorusanLogisticsGuzergah.MenuWayPoints, BorusanLogisticsGuzergah, Version=1.0.0.2, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;menuWayPoints1.Parent" xml:space="preserve">
+    <value>backstageViewClientControl1</value>
+  </data>
+  <data name="&gt;&gt;menuWayPoints1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="ribbonPageGroup1.Text" xml:space="preserve">
     <value>Menu</value>
@@ -2423,7 +2472,6 @@
         AwAAwAMAAMADAADAAwAAwAMAAOADAADwAwAA+AMAAP//AAD//wAA
 </value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
@@ -2435,6 +2483,54 @@
   </data>
   <data name="&gt;&gt;barAndDockingController1.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarAndDockingController, DevExpress.XtraBars.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bvTabWayPoints.Name" xml:space="preserve">
+    <value>bvTabWayPoints</value>
+  </data>
+  <data name="&gt;&gt;bvTabWayPoints.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewTabItem, DevExpress.XtraBars.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bvTabRoadSurvey.Name" xml:space="preserve">
+    <value>bvTabRoadSurvey</value>
+  </data>
+  <data name="&gt;&gt;bvTabRoadSurvey.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewTabItem, DevExpress.XtraBars.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bvTabReports.Name" xml:space="preserve">
+    <value>bvTabReports</value>
+  </data>
+  <data name="&gt;&gt;bvTabReports.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewTabItem, DevExpress.XtraBars.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;backstageViewItemSeparator1.Name" xml:space="preserve">
+    <value>backstageViewItemSeparator1</value>
+  </data>
+  <data name="&gt;&gt;backstageViewItemSeparator1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator, DevExpress.XtraBars.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bvTabSettings.Name" xml:space="preserve">
+    <value>bvTabSettings</value>
+  </data>
+  <data name="&gt;&gt;bvTabSettings.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewTabItem, DevExpress.XtraBars.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;backstageViewItemSeparator2.Name" xml:space="preserve">
+    <value>backstageViewItemSeparator2</value>
+  </data>
+  <data name="&gt;&gt;backstageViewItemSeparator2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator, DevExpress.XtraBars.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bvBtnAbout.Name" xml:space="preserve">
+    <value>bvBtnAbout</value>
+  </data>
+  <data name="&gt;&gt;bvBtnAbout.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bvBtnExit.Name" xml:space="preserve">
+    <value>bvBtnExit</value>
+  </data>
+  <data name="&gt;&gt;bvBtnExit.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barStaticItem1.Name" xml:space="preserve">
     <value>barStaticItem1</value>
@@ -2472,54 +2568,6 @@
   <data name="&gt;&gt;galleryDropDown1.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.GalleryDropDown, DevExpress.XtraBars.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;bvTabWayPoints.Name" xml:space="preserve">
-    <value>bvTabWayPoints</value>
-  </data>
-  <data name="&gt;&gt;bvTabWayPoints.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewTabItem, DevExpress.XtraBars.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bvTabRoadSurvey.Name" xml:space="preserve">
-    <value>bvTabRoadSurvey</value>
-  </data>
-  <data name="&gt;&gt;bvTabRoadSurvey.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewTabItem, DevExpress.XtraBars.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;backstageViewItemSeparator1.Name" xml:space="preserve">
-    <value>backstageViewItemSeparator1</value>
-  </data>
-  <data name="&gt;&gt;backstageViewItemSeparator1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator, DevExpress.XtraBars.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bvTabSettings.Name" xml:space="preserve">
-    <value>bvTabSettings</value>
-  </data>
-  <data name="&gt;&gt;bvTabSettings.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewTabItem, DevExpress.XtraBars.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;backstageViewItemSeparator2.Name" xml:space="preserve">
-    <value>backstageViewItemSeparator2</value>
-  </data>
-  <data name="&gt;&gt;backstageViewItemSeparator2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator, DevExpress.XtraBars.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bvBtnAbout.Name" xml:space="preserve">
-    <value>bvBtnAbout</value>
-  </data>
-  <data name="&gt;&gt;bvBtnAbout.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bvBtnExit.Name" xml:space="preserve">
-    <value>bvBtnExit</value>
-  </data>
-  <data name="&gt;&gt;bvBtnExit.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bvTabReports.Name" xml:space="preserve">
-    <value>bvTabReports</value>
-  </data>
-  <data name="&gt;&gt;bvTabReports.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewTabItem, DevExpress.XtraBars.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>
   </data>
@@ -2529,28 +2577,4 @@
   <metadata name="galleryDropDown1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>405, 17</value>
   </metadata>
-  <data name="menuWayPoints1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="menuWayPoints1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="menuWayPoints1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>407, 249</value>
-  </data>
-  <data name="menuWayPoints1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;menuWayPoints1.Name" xml:space="preserve">
-    <value>menuWayPoints1</value>
-  </data>
-  <data name="&gt;&gt;menuWayPoints1.Type" xml:space="preserve">
-    <value>BorusanLogisticsGuzergah.MenuWayPoints, BorusanLogisticsGuzergah, Version=1.0.0.2, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;menuWayPoints1.Parent" xml:space="preserve">
-    <value>backstageViewClientControl1</value>
-  </data>
-  <data name="&gt;&gt;menuWayPoints1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
 </root>

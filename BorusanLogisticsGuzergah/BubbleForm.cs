@@ -30,11 +30,11 @@ namespace BorusanLogisticsGuzergah
             lblKM.Text = dt.Rows[0].ItemArray[5].ToString();
             lblCoordinates.Text = dt.Rows[0].ItemArray[1].ToString() + " " + dt.Rows[0].ItemArray[2].ToString();
             lblDescriptions.Text = dt.Rows[0].ItemArray[6].ToString();
-            var path = System.IO.Path.GetDirectoryName(
-      System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase).Replace("file:\\","");
+            var path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase).Replace("file:\\","");
             string FileName = path + dt.Rows[0].ItemArray[7].ToString();
             pictureEdit1.Image = Image.FromFile(FileName);
         }
+
         public static System.Data.DataTable getS_Waypoints(string latitude, string longitude)
         {
             //if (jobNum.Equals(""))
@@ -67,5 +67,6 @@ namespace BorusanLogisticsGuzergah
             //Cursor.Current = Cursors.Default;
             return dt;
         }
+
     }
 }

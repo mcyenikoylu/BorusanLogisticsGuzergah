@@ -69,6 +69,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuRoadSurvey.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuRoadSurvey.Designer.cs">
+      <DependentUpon>MenuRoadSurvey.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuWayPoints.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -77,6 +83,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoadSurveyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoadSurveyForm.Designer.cs">
+      <DependentUpon>RoadSurveyForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="WaypointForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +100,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuRoadSurvey.resx">
+      <DependentUpon>MenuRoadSurvey.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuWayPoints.resx">
       <DependentUpon>MenuWayPoints.cs</DependentUpon>
@@ -103,6 +118,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RoadSurveyForm.resx">
+      <DependentUpon>RoadSurveyForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WaypointForm.resx">
       <DependentUpon>WaypointForm.cs</DependentUpon>
     </EmbeddedResource>

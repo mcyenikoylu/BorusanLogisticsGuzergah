@@ -44,7 +44,7 @@ namespace BorusanLogisticsGuzergah
             }
 
             //string formCaption = xtraTabbedMdiManager1.SelectedPage.Text;
-            string formName = xtraTabbedMdiManager1.SelectedPage.Text + "Form";
+            string formName = xtraTabbedMdiManager1.SelectedPage.Text.Replace(" ","") + "Form";
 
             //var formList = Functions.db.S_Form(-1).ToList();
             //string formName = formList.Where(c => c.FormCaption == formCaption).FirstOrDefault().FormName.ToString();

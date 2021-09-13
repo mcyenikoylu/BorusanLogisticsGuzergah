@@ -1,6 +1,6 @@
 ﻿namespace BorusanLogisticsGuzergah
 {
-    partial class MenuWayPoints
+    partial class MenuRoadSurvey
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup2 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem2 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuWayPoints));
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem1 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuRoadSurvey));
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.galleryControl1 = new DevExpress.XtraBars.Ribbon.GalleryControl();
@@ -72,7 +72,7 @@
             this.labelControl2.ShowLineShadow = false;
             this.labelControl2.Size = new System.Drawing.Size(374, 38);
             this.labelControl2.TabIndex = 0;
-            this.labelControl2.Text = "Way Points";
+            this.labelControl2.Text = "Road Survey";
             // 
             // splitContainer1
             // 
@@ -90,9 +90,9 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.labelControl1);
-            this.splitContainer1.Size = new System.Drawing.Size(576, 487);
+            this.splitContainer1.Size = new System.Drawing.Size(526, 478);
             this.splitContainer1.SplitterDistance = 414;
-            this.splitContainer1.TabIndex = 7;
+            this.splitContainer1.TabIndex = 8;
             // 
             // galleryControl1
             // 
@@ -113,16 +113,16 @@
             this.galleryControl1.Gallery.ColumnCount = 1;
             this.galleryControl1.Gallery.DistanceItemImageToText = 20;
             this.galleryControl1.Gallery.DrawImageBackground = false;
-            galleryItemGroup2.Caption = "Group1";
-            galleryItem2.Caption = "Waypoint";
-            galleryItem2.Description = "description description description description description ";
-            galleryItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            galleryItem2.ImageOptions.ImageIndex = 1;
-            galleryItem2.Value = "100";
-            galleryItemGroup2.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem2});
+            galleryItemGroup1.Caption = "Group1";
+            galleryItem1.Caption = "Road Survey";
+            galleryItem1.Description = "description description description description description ";
+            galleryItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            galleryItem1.ImageOptions.ImageIndex = 1;
+            galleryItem1.Value = "200";
+            galleryItemGroup1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem1});
             this.galleryControl1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup2});
+            galleryItemGroup1});
             this.galleryControl1.Gallery.ItemImageLayout = DevExpress.Utils.Drawing.ImageLayoutMode.ZoomInside;
             this.galleryControl1.Gallery.ItemImageLocation = DevExpress.Utils.Locations.Left;
             this.galleryControl1.Gallery.ShowGroupCaption = false;
@@ -150,7 +150,7 @@
             this.labelControl1.LineVisible = true;
             this.labelControl1.Location = new System.Drawing.Point(0, 0);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(4, 487);
+            this.labelControl1.Size = new System.Drawing.Size(4, 478);
             this.labelControl1.TabIndex = 0;
             // 
             // popupMenu1
@@ -193,15 +193,15 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(576, 0);
+            this.barDockControlTop.Size = new System.Drawing.Size(526, 0);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 487);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 478);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(576, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(526, 0);
             // 
             // barDockControlLeft
             // 
@@ -209,15 +209,15 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 487);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 478);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(576, 0);
+            this.barDockControlRight.Location = new System.Drawing.Point(526, 0);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 487);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 478);
             // 
             // xtraTabbedMdiManager1
             // 
@@ -228,7 +228,7 @@
             this.imageCollection1.ImageSize = new System.Drawing.Size(32, 32);
             this.imageCollection1.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("imageCollection1.ImageStream")));
             // 
-            // MenuWayPoints
+            // MenuRoadSurvey
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -237,8 +237,8 @@
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.Name = "MenuWayPoints";
-            this.Size = new System.Drawing.Size(576, 487);
+            this.Name = "MenuRoadSurvey";
+            this.Size = new System.Drawing.Size(526, 478);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
