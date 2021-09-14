@@ -120,51 +120,18 @@
   <metadata name="barAndDockingController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="&gt;&gt;menuWayPoints1.Name" xml:space="preserve">
-    <value>menuWayPoints1</value>
-  </data>
-  <data name="&gt;&gt;menuWayPoints1.Type" xml:space="preserve">
-    <value>BorusanLogisticsGuzergah.MenuWayPoints, BorusanLogisticsGuzergah, Version=1.0.0.2, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;menuWayPoints1.Parent" xml:space="preserve">
-    <value>backstageViewClientControl1</value>
-  </data>
-  <data name="&gt;&gt;menuWayPoints1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="backstageViewClientControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>156, 63</value>
-  </data>
-  <data name="backstageViewClientControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>407, 249</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="backstageViewClientControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;backstageViewClientControl1.Name" xml:space="preserve">
-    <value>backstageViewClientControl1</value>
-  </data>
-  <data name="&gt;&gt;backstageViewClientControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewClientControl, DevExpress.XtraBars.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;backstageViewClientControl1.Parent" xml:space="preserve">
-    <value>backstageViewControl1</value>
-  </data>
-  <data name="&gt;&gt;backstageViewClientControl1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="menuRoadSurvey1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="menuRoadSurvey1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="menuRoadSurvey1.Size" type="System.Drawing.Size, System.Drawing">
     <value>407, 249</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="menuRoadSurvey1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -199,6 +166,51 @@
     <value>backstageViewControl1</value>
   </data>
   <data name="&gt;&gt;backstageViewClientControl2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="menuWayPoints1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="menuWayPoints1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuWayPoints1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 251</value>
+  </data>
+  <data name="menuWayPoints1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;menuWayPoints1.Name" xml:space="preserve">
+    <value>menuWayPoints1</value>
+  </data>
+  <data name="&gt;&gt;menuWayPoints1.Type" xml:space="preserve">
+    <value>BorusanLogisticsGuzergah.MenuWayPoints, BorusanLogisticsGuzergah, Version=1.0.0.2, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;menuWayPoints1.Parent" xml:space="preserve">
+    <value>backstageViewClientControl1</value>
+  </data>
+  <data name="&gt;&gt;menuWayPoints1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="backstageViewClientControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 62</value>
+  </data>
+  <data name="backstageViewClientControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 251</value>
+  </data>
+  <data name="backstageViewClientControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;backstageViewClientControl1.Name" xml:space="preserve">
+    <value>backstageViewClientControl1</value>
+  </data>
+  <data name="&gt;&gt;backstageViewClientControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewClientControl, DevExpress.XtraBars.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;backstageViewClientControl1.Parent" xml:space="preserve">
+    <value>backstageViewControl1</value>
+  </data>
+  <data name="&gt;&gt;backstageViewClientControl1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="backstageViewClientControl4.Location" type="System.Drawing.Point, System.Drawing">
@@ -491,6 +503,9 @@
   <data name="ribbonControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="ribbonPageGroup1.Text" xml:space="preserve">
+    <value>Menu</value>
+  </data>
   <data name="ribbonPage1.Text" xml:space="preserve">
     <value>Home</value>
   </data>
@@ -526,33 +541,6 @@
   </data>
   <data name="&gt;&gt;ribbonControl1.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="menuWayPoints1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="menuWayPoints1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="menuWayPoints1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>407, 249</value>
-  </data>
-  <data name="menuWayPoints1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;menuWayPoints1.Name" xml:space="preserve">
-    <value>menuWayPoints1</value>
-  </data>
-  <data name="&gt;&gt;menuWayPoints1.Type" xml:space="preserve">
-    <value>BorusanLogisticsGuzergah.MenuWayPoints, BorusanLogisticsGuzergah, Version=1.0.0.2, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;menuWayPoints1.Parent" xml:space="preserve">
-    <value>backstageViewClientControl1</value>
-  </data>
-  <data name="&gt;&gt;menuWayPoints1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="ribbonPageGroup1.Text" xml:space="preserve">
-    <value>Menu</value>
   </data>
   <metadata name="xtraTabbedMdiManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>215, 17</value>

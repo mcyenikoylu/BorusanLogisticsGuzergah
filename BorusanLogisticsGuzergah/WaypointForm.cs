@@ -52,7 +52,33 @@ namespace BorusanLogisticsGuzergah
             // Show a color legend.
             mapControl1.Legends.Add(new ColorListLegend() { Layer = itemsLayer });
 
-            
+            GridLoad();
+        }
+
+        void GridLoad()
+        {
+            ConnDBLocal(true);
+
+            //Cursor.Current = Cursors.WaitCursor;
+            SqlCommand sqlCmd = new SqlCommand("S_WaypointsAll", dbLocal);
+            sqlCmd.CommandTimeout = 30000;
+            //sqlCmd.Parameters.AddWithValue("@ID", ComapnyID);
+            //sqlCmd.Parameters.AddWithValue("@Cell", cell);
+            sqlCmd.CommandType = CommandType.StoredProcedure;
+
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = sqlCmd;
+
+            DataTable dt = new DataTable();
+
+            da.Fill(dt);
+            //gridControl1.DataSource = ds;
+            //gcDashboard.ItemsSource = ds;
+
+            ConnDBLocal(false);
+
+            gridControl1.DataSource = dt;
+
         }
 
         private void OnBeforeShowToolTip(object sender, ToolTipControllerShowEventArgs e)

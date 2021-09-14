@@ -83,6 +83,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProposedRouteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProposedRouteForm.Designer.cs">
+      <DependentUpon>ProposedRouteForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="RoadSurveyForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +124,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ProposedRouteForm.resx">
+      <DependentUpon>ProposedRouteForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RoadSurveyForm.resx">
       <DependentUpon>RoadSurveyForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +155,10 @@
     <Content Include="Image\2.png" />
     <Content Include="Image\3.png" />
     <Content Include="Image\4.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

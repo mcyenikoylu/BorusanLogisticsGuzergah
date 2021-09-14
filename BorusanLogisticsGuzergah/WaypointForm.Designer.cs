@@ -39,21 +39,18 @@
             this.tabMap = new DevExpress.XtraTab.XtraTabPage();
             this.mapControl1 = new DevExpress.XtraMap.MapControl();
             this.tabGrid = new DevExpress.XtraTab.XtraTabPage();
-            this.gridSplitContainer1 = new DevExpress.XtraGrid.GridSplitContainer();
-            this.gridSplitContainer1Grid = new DevExpress.XtraGrid.GridControl();
-            this.gridSplitContainer1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.tabMap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mapControl1)).BeginInit();
             this.tabGrid.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1)).BeginInit();
-            this.gridSplitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1Grid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -102,7 +99,7 @@
             this.xtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.xtraTabControl1.Location = new System.Drawing.Point(0, 143);
             this.xtraTabControl1.Name = "xtraTabControl1";
-            this.xtraTabControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.xtraTabControl1.RightToLeftLayout = DevExpress.Utils.DefaultBoolean.True;
             this.xtraTabControl1.SelectedTabPage = this.tabMap;
             this.xtraTabControl1.Size = new System.Drawing.Size(701, 353);
             this.xtraTabControl1.TabIndex = 2;
@@ -127,43 +124,32 @@
             // 
             // tabGrid
             // 
-            this.tabGrid.Controls.Add(this.gridSplitContainer1);
+            this.tabGrid.Controls.Add(this.gridControl1);
             this.tabGrid.Name = "tabGrid";
             this.tabGrid.Size = new System.Drawing.Size(695, 325);
             this.tabGrid.Text = "Grid";
-            // 
-            // gridSplitContainer1
-            // 
-            this.gridSplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridSplitContainer1.Grid = this.gridSplitContainer1Grid;
-            this.gridSplitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.gridSplitContainer1.Name = "gridSplitContainer1";
-            this.gridSplitContainer1.Panel1.Controls.Add(this.gridSplitContainer1Grid);
-            this.gridSplitContainer1.Panel1.Text = "Panel1";
-            this.gridSplitContainer1.Panel2.Text = "Panel2";
-            this.gridSplitContainer1.Size = new System.Drawing.Size(695, 325);
-            this.gridSplitContainer1.TabIndex = 0;
-            // 
-            // gridSplitContainer1Grid
-            // 
-            this.gridSplitContainer1Grid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridSplitContainer1Grid.Location = new System.Drawing.Point(0, 0);
-            this.gridSplitContainer1Grid.MainView = this.gridSplitContainer1View;
-            this.gridSplitContainer1Grid.Name = "gridSplitContainer1Grid";
-            this.gridSplitContainer1Grid.Size = new System.Drawing.Size(695, 325);
-            this.gridSplitContainer1Grid.TabIndex = 0;
-            this.gridSplitContainer1Grid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridSplitContainer1View});
-            // 
-            // gridSplitContainer1View
-            // 
-            this.gridSplitContainer1View.GridControl = this.gridSplitContainer1Grid;
-            this.gridSplitContainer1View.Name = "gridSplitContainer1View";
             // 
             // popupMenu1
             // 
             this.popupMenu1.Name = "popupMenu1";
             this.popupMenu1.Ribbon = this.ribbon;
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.Location = new System.Drawing.Point(0, 0);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.MenuManager = this.ribbon;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(695, 325);
+            this.gridControl1.TabIndex = 0;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
             // 
             // WaypointForm
             // 
@@ -185,11 +171,9 @@
             this.tabMap.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.mapControl1)).EndInit();
             this.tabGrid.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1)).EndInit();
-            this.gridSplitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1Grid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,10 +189,9 @@
         private DevExpress.XtraTab.XtraTabControl xtraTabControl1;
         private DevExpress.XtraTab.XtraTabPage tabGrid;
         private DevExpress.XtraTab.XtraTabPage tabMap;
-        private DevExpress.XtraGrid.GridSplitContainer gridSplitContainer1;
-        private DevExpress.XtraGrid.GridControl gridSplitContainer1Grid;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridSplitContainer1View;
         private DevExpress.XtraMap.MapControl mapControl1;
         private DevExpress.XtraBars.PopupMenu popupMenu1;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
     }
 }

@@ -33,9 +33,10 @@
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
             this.barAndDockingController1 = new DevExpress.XtraBars.BarAndDockingController(this.components);
+            this.backstageViewClientControl2 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.menuRoadSurvey1 = new BorusanLogisticsGuzergah.MenuRoadSurvey();
             this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.menuWayPoints1 = new BorusanLogisticsGuzergah.MenuWayPoints();
-            this.backstageViewClientControl2 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.backstageViewClientControl4 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.backstageViewClientControl3 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.bvTabWayPoints = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
@@ -53,13 +54,12 @@
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.galleryDropDown1 = new DevExpress.XtraBars.Ribbon.GalleryDropDown(this.components);
-            this.menuRoadSurvey1 = new BorusanLogisticsGuzergah.MenuRoadSurvey();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).BeginInit();
             this.backstageViewControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.barAndDockingController1)).BeginInit();
-            this.backstageViewClientControl1.SuspendLayout();
             this.backstageViewClientControl2.SuspendLayout();
+            this.backstageViewClientControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.galleryDropDown1)).BeginInit();
             this.SuspendLayout();
@@ -67,7 +67,7 @@
             // ribbonControl1
             // 
             this.ribbonControl1.ApplicationButtonDropDownControl = this.backstageViewControl1;
-            this.ribbonControl1.ApplicationButtonImageOptions.Image = global::BorusanLogisticsGuzergah.Properties.Resources.Logo;
+            this.ribbonControl1.ApplicationButtonImageOptions.Image = global::BorusanLogisticsGuzergah.Properties.Resources._4;
             this.ribbonControl1.Controller = this.barAndDockingController1;
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
@@ -92,8 +92,8 @@
             // backstageViewControl1
             // 
             this.backstageViewControl1.Controller = this.barAndDockingController1;
-            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl1);
             this.backstageViewControl1.Controls.Add(this.backstageViewClientControl2);
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl1);
             this.backstageViewControl1.Controls.Add(this.backstageViewClientControl4);
             this.backstageViewControl1.Controls.Add(this.backstageViewClientControl3);
             this.backstageViewControl1.Items.Add(this.bvTabWayPoints);
@@ -111,6 +111,17 @@
             this.backstageViewControl1.SelectedTabIndex = 1;
             this.backstageViewControl1.Style = DevExpress.XtraBars.Ribbon.BackstageViewStyle.Office2013;
             // 
+            // backstageViewClientControl2
+            // 
+            this.backstageViewClientControl2.Controls.Add(this.menuRoadSurvey1);
+            resources.ApplyResources(this.backstageViewClientControl2, "backstageViewClientControl2");
+            this.backstageViewClientControl2.Name = "backstageViewClientControl2";
+            // 
+            // menuRoadSurvey1
+            // 
+            resources.ApplyResources(this.menuRoadSurvey1, "menuRoadSurvey1");
+            this.menuRoadSurvey1.Name = "menuRoadSurvey1";
+            // 
             // backstageViewClientControl1
             // 
             this.backstageViewClientControl1.Controls.Add(this.menuWayPoints1);
@@ -122,12 +133,6 @@
             resources.ApplyResources(this.menuWayPoints1, "menuWayPoints1");
             this.menuWayPoints1.Name = "menuWayPoints1";
             this.menuWayPoints1.Ribbon = null;
-            // 
-            // backstageViewClientControl2
-            // 
-            this.backstageViewClientControl2.Controls.Add(this.menuRoadSurvey1);
-            resources.ApplyResources(this.backstageViewClientControl2, "backstageViewClientControl2");
-            this.backstageViewClientControl2.Name = "backstageViewClientControl2";
             // 
             // backstageViewClientControl4
             // 
@@ -240,11 +245,6 @@
             this.galleryDropDown1.Name = "galleryDropDown1";
             this.galleryDropDown1.Ribbon = this.ribbonControl1;
             // 
-            // menuRoadSurvey1
-            // 
-            resources.ApplyResources(this.menuRoadSurvey1, "menuRoadSurvey1");
-            this.menuRoadSurvey1.Name = "menuRoadSurvey1";
-            // 
             // Form1
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
@@ -263,8 +263,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).EndInit();
             this.backstageViewControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.barAndDockingController1)).EndInit();
-            this.backstageViewClientControl1.ResumeLayout(false);
             this.backstageViewClientControl2.ResumeLayout(false);
+            this.backstageViewClientControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.galleryDropDown1)).EndInit();
             this.ResumeLayout(false);

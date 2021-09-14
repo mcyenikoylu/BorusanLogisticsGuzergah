@@ -114,7 +114,7 @@
             this.galleryControl1.Gallery.DistanceItemImageToText = 20;
             this.galleryControl1.Gallery.DrawImageBackground = false;
             galleryItemGroup1.Caption = "Group1";
-            galleryItem1.Caption = "Road Survey";
+            galleryItem1.Caption = "Proposed Route";
             galleryItem1.Description = "description description description description description ";
             galleryItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             galleryItem1.ImageOptions.ImageIndex = 1;
