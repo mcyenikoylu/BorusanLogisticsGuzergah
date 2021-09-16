@@ -32,6 +32,7 @@
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem1 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuRoadSurvey));
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem2 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.galleryControl1 = new DevExpress.XtraBars.Ribbon.GalleryControl();
@@ -119,8 +120,11 @@
             galleryItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             galleryItem1.ImageOptions.ImageIndex = 1;
             galleryItem1.Value = "200";
+            galleryItem2.Caption = "Proposed Route 2";
+            galleryItem2.Value = "201";
             galleryItemGroup1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem1});
+            galleryItem1,
+            galleryItem2});
             this.galleryControl1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
             galleryItemGroup1});
             this.galleryControl1.Gallery.ItemImageLayout = DevExpress.Utils.Drawing.ImageLayoutMode.ZoomInside;
@@ -131,7 +135,7 @@
             this.galleryControl1.Gallery.ItemClick += new DevExpress.XtraBars.Ribbon.GalleryItemClickEventHandler(this.galleryControl1_Gallery_ItemClick);
             this.galleryControl1.Location = new System.Drawing.Point(20, 58);
             this.galleryControl1.Name = "galleryControl1";
-            this.galleryControl1.Size = new System.Drawing.Size(374, 40);
+            this.galleryControl1.Size = new System.Drawing.Size(374, 78);
             this.galleryControl1.TabIndex = 1;
             this.galleryControl1.Text = "galleryControl1";
             // 

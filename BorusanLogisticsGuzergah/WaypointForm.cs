@@ -36,6 +36,8 @@ namespace BorusanLogisticsGuzergah
             mapControl1.CenterPoint = new GeoPoint(39, 36);
             mapControl1.MapItemClick += OnMapItemClick;
 
+         
+
             ToolTipController toolTipController = new ToolTipController();
             toolTipController.BeforeShow += OnBeforeShowToolTip;
             mapControl1.ToolTipController = toolTipController;
@@ -123,12 +125,16 @@ namespace BorusanLogisticsGuzergah
             //popupMenu1.ShowPopup(Cursor.Position);
             //MessageBox.Show("latitude: "+ latitude + " longitude: "+ longitude);
 
+            //string nameAttribute = e.Item.Attributes["D"].Value.ToString();
+
             BubbleForm frm = new BubbleForm(latitude, longitude);
             frm.ShowDialog();
 
-
+            
 
         }
+
+       
 
         public static bool ConnDBLocal(bool Connection)
         {
@@ -225,5 +231,13 @@ namespace BorusanLogisticsGuzergah
             return colorizer;
         }
 
+        private void mapControl1_MouseClick(object sender, MouseEventArgs e)
+        {
+            GeoPoint location = (GeoPoint)mapControl1.ScreenPointToCoordPoint(e.Location);
+            //TextEdit1.Text = string.Format("{0} - {1}", location.Latitude, location.Longitude);
+            //storage.Items.Add(new MapCallout() { Text = "Loc", Location = location });
+            string Latitude = location.Latitude.ToString();
+            string Longitude = location.Longitude.ToString();
+        }
     }
 }

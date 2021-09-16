@@ -39,11 +39,11 @@ namespace BorusanLogisticsGuzergah
                 ProposedRouteForm frm = new ProposedRouteForm();
                 ButtonItemClickMethod(frm, 0);
             }
-            //else if (value == 12)
-            //{
-            //    Departments frm = new Departments();
-            //    ButtonItemClickMethod(frm, 0);
-            //}
+            else if (value == 201)
+            {
+                ProposedRouteForm2 frm = new ProposedRouteForm2();
+                ButtonItemClickMethod(frm, 0);
+            }
         }
 
         void XtraUserControl1_SizeChanged(object sender, EventArgs e)

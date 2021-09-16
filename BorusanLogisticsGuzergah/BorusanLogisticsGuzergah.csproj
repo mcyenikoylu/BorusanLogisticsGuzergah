@@ -89,6 +89,12 @@
     <Compile Include="ProposedRouteForm.Designer.cs">
       <DependentUpon>ProposedRouteForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProposedRouteForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProposedRouteForm2.Designer.cs">
+      <DependentUpon>ProposedRouteForm2.cs</DependentUpon>
+    </Compile>
     <Compile Include="RoadSurveyForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </Compile>
     <EmbeddedResource Include="ProposedRouteForm.resx">
       <DependentUpon>ProposedRouteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProposedRouteForm2.resx">
+      <DependentUpon>ProposedRouteForm2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RoadSurveyForm.resx">
       <DependentUpon>RoadSurveyForm.cs</DependentUpon>

@@ -39,18 +39,18 @@
             this.tabMap = new DevExpress.XtraTab.XtraTabPage();
             this.mapControl1 = new DevExpress.XtraMap.MapControl();
             this.tabGrid = new DevExpress.XtraTab.XtraTabPage();
-            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.tabMap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mapControl1)).BeginInit();
             this.tabGrid.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -121,6 +121,7 @@
             this.mapControl1.Name = "mapControl1";
             this.mapControl1.Size = new System.Drawing.Size(695, 325);
             this.mapControl1.TabIndex = 0;
+            this.mapControl1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.mapControl1_MouseClick);
             // 
             // tabGrid
             // 
@@ -128,11 +129,6 @@
             this.tabGrid.Name = "tabGrid";
             this.tabGrid.Size = new System.Drawing.Size(695, 325);
             this.tabGrid.Text = "Grid";
-            // 
-            // popupMenu1
-            // 
-            this.popupMenu1.Name = "popupMenu1";
-            this.popupMenu1.Ribbon = this.ribbon;
             // 
             // gridControl1
             // 
@@ -150,6 +146,11 @@
             // 
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            // 
+            // popupMenu1
+            // 
+            this.popupMenu1.Name = "popupMenu1";
+            this.popupMenu1.Ribbon = this.ribbon;
             // 
             // WaypointForm
             // 
@@ -171,9 +172,9 @@
             this.tabMap.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.mapControl1)).EndInit();
             this.tabGrid.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

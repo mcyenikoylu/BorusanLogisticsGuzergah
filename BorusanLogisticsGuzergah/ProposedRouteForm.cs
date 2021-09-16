@@ -38,33 +38,46 @@ namespace BorusanLogisticsGuzergah
             //toolTipController.BeforeShow += OnBeforeShowToolTip;
             //mapControl1.ToolTipController = toolTipController;
 
-            // Create a layer to show vector items.
-            VectorItemsLayer itemsLayer = new VectorItemsLayer()
-            {
-                Data = CreateData(),
-                Colorizer = CreateColorizer(),
-                ToolTipPattern = "{NAME}: ${GDP_MD_EST:#,0}M" // "%A0%: %V0%\r\n %A1%: %V1%\r\n %A2%: %V2%"
-            };
+            //// Create a layer to show vector items.
+            //VectorItemsLayer itemsLayer = new VectorItemsLayer()
+            //{
+            //    Data = CreateData(),
+            //    Colorizer = CreateColorizer(),
+            //    ToolTipPattern = "{NAME}: ${GDP_MD_EST:#,0}M" // "%A0%: %V0%\r\n %A1%: %V1%\r\n %A2%: %V2%"
+            //};
 
-            mapControl1.Layers.Add(itemsLayer);
+            //mapControl1.Layers.Add(itemsLayer);
 
-            // Show a color legend.
-            mapControl1.Legends.Add(new ColorListLegend() { Layer = itemsLayer });
+            //// Show a color legend.
+            //mapControl1.Legends.Add(new ColorListLegend() { Layer = itemsLayer });
 
-            BingRouteDataProvider routeDataProvider = new BingRouteDataProvider
-            {
-                BingKey = "Avvc7Zi1mbEsmv7IRo9TnNbP32cLralhqFq3AhC-JsaVXS_qymj9GPT8TdOynshZ"
-            };
-            
+            //BingRouteDataProvider routeDataProvider = new BingRouteDataProvider
+            //{
+            routeDataProvider.BingKey = "Avvc7Zi1mbEsmv7IRo9TnNbP32cLralhqFq3AhC-JsaVXS_qymj9GPT8TdOynshZ";
+            //};
+
+            routeDataProvider.RouteOptions.Mode = BingTravelMode.Driving;
+
+
             // Create three waypoints and add them to the route waypoints list.
             List<RouteWaypoint> waypoints = new List<RouteWaypoint>();
-            waypoints.Add(new RouteWaypoint("NY", new GeoPoint(38.48588, 27.1356279)));
-            waypoints.Add(new RouteWaypoint("Oklahoma", new GeoPoint(38.4814793, 27.153824)));
-            waypoints.Add(new RouteWaypoint("Las Vegas", new GeoPoint(38.4811434, 27.1681577)));
-            waypoints.Add(new RouteWaypoint("Las Vegas", new GeoPoint(38.4780526, 27.1880704)));
+            waypoints.Add(new RouteWaypoint("Tpi2", new GeoPoint(38.7341797846321, 26.9524066991532)));
+            waypoints.Add(new RouteWaypoint("Istanbul", new GeoPoint(39.5502543286998 ,27.0893281049455)));
+            waypoints.Add(new RouteWaypoint("Izmir", new GeoPoint(39.6428451147536 ,27.7201506120507)));
+            waypoints.Add(new RouteWaypoint("Bodrum", new GeoPoint(39.9859976512948 ,28.1739539653036)));
+            waypoints.Add(new RouteWaypoint("Tpi2", new GeoPoint(40.3392669924001, 27.9652061190535)));
+            waypoints.Add(new RouteWaypoint("Istanbul", new GeoPoint(40.2376000046944 ,27.2409117326709)));
+            waypoints.Add(new RouteWaypoint("Izmir", new GeoPoint(40.3659641070493, 26.7058301600364)));
+            waypoints.Add(new RouteWaypoint("Bodrum", new GeoPoint(39.4957370096703 ,26.3443925771729)));
 
-            // Call the BingRouteDataProvider.CalculateRoute method.
+            //// Call the BingRouteDataProvider.CalculateRoute method.
             routeDataProvider.CalculateRoute(waypoints);
+            ////routeDataProvider.CalculateRoutesFromMajorRoads(
+            ////    new RouteWaypoint(description, new GeoPoint(38.6598746619533, 27.2211825614595))
+            ////);
+            //routeDataProvider.CalculateRoutesFromMajorRoads(new RouteWaypoint("Bergama", new GeoPoint(38.6598746619533, 27.0801503416066)));
+
+            routeDataProvider.LayerItemsGenerating += routeLayerItemsGenerating;
 
             mapControl1.Layers.Add(new InformationLayer
             {
@@ -72,9 +85,40 @@ namespace BorusanLogisticsGuzergah
             });
         }
 
+        BingRouteDataProvider routeDataProvider = new BingRouteDataProvider();
+        string description = "Route Waypoint";
+        double lat;
+        double lon;
+
+        private void routeLayerItemsGenerating(object sender, LayerItemsGeneratingEventArgs e)
+        {
+            if (e.Cancelled || (e.Error != null)) return;
+
+            //char pushpinMarker = 'A';
+            foreach (MapItem item in e.Items)
+            {
+                //MapPushpin pushpin = item as MapPushpin;
+                //if(pushpin != null) {
+                //    pushpin.Text = pushpinMarker++.ToString();
+                //}
+                MapPolyline polyline = item as MapPolyline;
+                if (polyline != null)
+                {
+                    polyline.Stroke = Color.FromArgb(0xFF, 0x00, 0x72, 0xC6);
+                    polyline.StrokeWidth = 4;
+                }
+            }
+            //splashScreenManager.CloseWaitForm();
+            mapControl1.ZoomToFit(e.Items, 0.4);
+        }
+
         private void btnRun_Click(object sender, EventArgs e)
         {
-
+            lat = Convert.ToDouble(txtStart.Text);
+            lon = Convert.ToDouble(txtEnd.Text);
+            routeDataProvider.CalculateRoutesFromMajorRoads(
+                new RouteWaypoint(description, new GeoPoint(lat, lon))
+            );
         }
 
         private IMapDataAdapter CreateData()
@@ -144,5 +188,29 @@ namespace BorusanLogisticsGuzergah
             return colorizer;
         }
 
+        private void mapControl1_MapItemClick(object sender, MapItemClickEventArgs e)
+        {
+            if (e.Item is MapPushpin)
+            {
+                MapPushpin pin = (MapPushpin)e.Item;
+                MessageBox.Show(pin.Location.ToString());
+            }
+        }
+
+        private void mapControl1_MouseClick(object sender, MouseEventArgs e)
+        {
+            GeoPoint location = (GeoPoint)mapControl1.ScreenPointToCoordPoint(e.Location);
+            //TextEdit1.Text = string.Format("{0} - {1}", location.Latitude, location.Longitude);
+            //storage.Items.Add(new MapCallout() { Text = "Loc", Location = location });
+            string Latitude = location.Latitude.ToString();
+            string Longitude = location.Longitude.ToString();
+
+            lat = location.Latitude;
+            lon = location.Longitude;
+
+            routeDataProvider.CalculateRoutesFromMajorRoads(
+                new RouteWaypoint(description, new GeoPoint(lat, lon))
+            );
+        }
     }
 }

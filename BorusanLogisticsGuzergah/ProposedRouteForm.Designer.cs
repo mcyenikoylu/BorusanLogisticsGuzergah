@@ -33,17 +33,17 @@
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.txtStart = new DevExpress.XtraEditors.TextEdit();
-            this.txtEnd = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.btnRun = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.txtEnd = new DevExpress.XtraEditors.TextEdit();
+            this.txtStart = new DevExpress.XtraEditors.TextEdit();
             this.mapControl1 = new DevExpress.XtraMap.MapControl();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtStart.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEnd.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtStart.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mapControl1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,6 +78,7 @@
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
             this.ribbonStatusBar.Size = new System.Drawing.Size(796, 31);
+            this.ribbonStatusBar.Visible = false;
             // 
             // panelControl1
             // 
@@ -92,38 +93,6 @@
             this.panelControl1.Size = new System.Drawing.Size(796, 32);
             this.panelControl1.TabIndex = 2;
             // 
-            // txtStart
-            // 
-            this.txtStart.Location = new System.Drawing.Point(115, 5);
-            this.txtStart.MenuManager = this.ribbon;
-            this.txtStart.Name = "txtStart";
-            this.txtStart.Size = new System.Drawing.Size(229, 20);
-            this.txtStart.TabIndex = 0;
-            // 
-            // txtEnd
-            // 
-            this.txtEnd.Location = new System.Drawing.Point(458, 5);
-            this.txtEnd.MenuManager = this.ribbon;
-            this.txtEnd.Name = "txtEnd";
-            this.txtEnd.Size = new System.Drawing.Size(251, 20);
-            this.txtEnd.TabIndex = 1;
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Location = new System.Drawing.Point(12, 8);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(97, 13);
-            this.labelControl1.TabIndex = 2;
-            this.labelControl1.Text = "Route Starting Point";
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Location = new System.Drawing.Point(375, 8);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(77, 13);
-            this.labelControl2.TabIndex = 3;
-            this.labelControl2.Text = "Route End Point";
-            // 
             // btnRun
             // 
             this.btnRun.Location = new System.Drawing.Point(727, 4);
@@ -133,6 +102,38 @@
             this.btnRun.Text = "Run";
             this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(375, 8);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(77, 13);
+            this.labelControl2.TabIndex = 3;
+            this.labelControl2.Text = "Route End Point";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(12, 8);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(97, 13);
+            this.labelControl1.TabIndex = 2;
+            this.labelControl1.Text = "Route Starting Point";
+            // 
+            // txtEnd
+            // 
+            this.txtEnd.Location = new System.Drawing.Point(458, 5);
+            this.txtEnd.MenuManager = this.ribbon;
+            this.txtEnd.Name = "txtEnd";
+            this.txtEnd.Size = new System.Drawing.Size(251, 20);
+            this.txtEnd.TabIndex = 1;
+            // 
+            // txtStart
+            // 
+            this.txtStart.Location = new System.Drawing.Point(115, 5);
+            this.txtStart.MenuManager = this.ribbon;
+            this.txtStart.Name = "txtStart";
+            this.txtStart.Size = new System.Drawing.Size(229, 20);
+            this.txtStart.TabIndex = 0;
+            // 
             // mapControl1
             // 
             this.mapControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -140,6 +141,8 @@
             this.mapControl1.Name = "mapControl1";
             this.mapControl1.Size = new System.Drawing.Size(796, 276);
             this.mapControl1.TabIndex = 3;
+            this.mapControl1.MapItemClick += new DevExpress.XtraMap.MapItemClickEventHandler(this.mapControl1_MapItemClick);
+            this.mapControl1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.mapControl1_MouseClick);
             // 
             // ProposedRouteForm
             // 
@@ -159,8 +162,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtStart.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEnd.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtStart.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mapControl1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
