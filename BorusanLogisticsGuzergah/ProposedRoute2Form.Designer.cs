@@ -1,6 +1,6 @@
 ﻿namespace BorusanLogisticsGuzergah
 {
-    partial class ProposedRouteForm2
+    partial class ProposedRoute2Form
     {
         /// <summary>
         /// Required designer variable.
@@ -28,77 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.mapControl1 = new DevExpress.XtraMap.MapControl();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mapControl1)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // ribbon
-            // 
-            this.ribbon.ExpandCollapseItem.Id = 0;
-            this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbon.ExpandCollapseItem});
-            this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 1;
-            this.ribbon.Name = "ribbon";
-            this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.ribbonPage1});
-            this.ribbon.Size = new System.Drawing.Size(585, 143);
-            this.ribbon.StatusBar = this.ribbonStatusBar;
-            // 
-            // ribbonPage1
-            // 
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1});
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "ribbonPage1";
-            // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
-            // 
-            // ribbonStatusBar
-            // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 460);
-            this.ribbonStatusBar.Name = "ribbonStatusBar";
-            this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(585, 31);
-            this.ribbonStatusBar.Visible = false;
-            // 
-            // mapControl1
-            // 
-            this.mapControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mapControl1.Location = new System.Drawing.Point(0, 143);
-            this.mapControl1.Name = "mapControl1";
-            this.mapControl1.Size = new System.Drawing.Size(585, 317);
-            this.mapControl1.TabIndex = 4;
-            // 
-            // ProposedRouteForm2
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(585, 491);
-            this.Controls.Add(this.mapControl1);
-            this.Controls.Add(this.ribbonStatusBar);
-            this.Controls.Add(this.ribbon);
-            this.Name = "ProposedRouteForm2";
-            this.Ribbon = this.ribbon;
-            this.StatusBar = this.ribbonStatusBar;
-            this.Text = "ProposedRouteForm2";
-            this.Load += new System.EventHandler(this.ProposedRouteForm2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mapControl1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
-
-
-
             this.imageLayer = new DevExpress.XtraMap.ImageLayer();
             this.imageProvider = new DevExpress.XtraMap.BingMapDataProvider();
             this.informationLayer = new DevExpress.XtraMap.InformationLayer();
@@ -119,7 +54,9 @@
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.lciLatitude = new DevExpress.XtraLayout.LayoutControlItem();
             this.lciLongitude = new DevExpress.XtraLayout.LayoutControlItem();
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mapControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.teLongitude.Properties)).BeginInit();
@@ -137,12 +74,47 @@
             ((System.ComponentModel.ISupportInitialize)(this.lciLongitude)).BeginInit();
             this.SuspendLayout();
             // 
-            // imageLayer
+            // ribbon
             // 
+            this.ribbon.ExpandCollapseItem.Id = 0;
+            this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.ribbon.ExpandCollapseItem});
+            this.ribbon.Location = new System.Drawing.Point(0, 0);
+            this.ribbon.MaxItemId = 1;
+            this.ribbon.Name = "ribbon";
+            this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.ribbonPage1});
+            this.ribbon.Size = new System.Drawing.Size(585, 143);
+            this.ribbon.StatusBar = this.ribbonStatusBar;
+            // 
+            // ribbonPage1
+            // 
+            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1});
+            this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Text = "Proposed Route 2";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
+            // 
+            // ribbonStatusBar
+            // 
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 464);
+            this.ribbonStatusBar.Name = "ribbonStatusBar";
+            this.ribbonStatusBar.Ribbon = this.ribbon;
+            this.ribbonStatusBar.Size = new System.Drawing.Size(585, 27);
+            this.ribbonStatusBar.Visible = false;
+            // 
+            // mapControl1
+            // 
+            this.mapControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mapControl1.Location = new System.Drawing.Point(0, 143);
+            this.mapControl1.Name = "mapControl1";
+            this.mapControl1.Size = new System.Drawing.Size(585, 317);
+            this.mapControl1.TabIndex = 4;
             this.imageLayer.DataProvider = this.imageProvider;
-            // 
-            // informationLayer
-            // 
             this.informationLayer.DataProvider = this.bingRouteDataProvider1;
             this.informationLayer.Name = "RouteLayer";
             // 
@@ -242,7 +214,6 @@
             this.layoutControlItem4,
             this.lciLatitude,
             this.lciLongitude});
-            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
             this.layoutControlGroup1.Size = new System.Drawing.Size(638, 328);
@@ -311,36 +282,39 @@
             this.lciLongitude.Size = new System.Drawing.Size(197, 24);
             this.lciLongitude.Text = "Longitude:";
             this.lciLongitude.TextSize = new System.Drawing.Size(92, 13);
-            //// 
-            //// defaultLookAndFeel1
-            //// 
-            //this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2016 Colorful";
-            //// 
-            //// Form1
-            //// 
-            //this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            //this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            //this.ClientSize = new System.Drawing.Size(638, 328);
-            //this.Controls.Add(this.layoutControl1);
-            //this.Name = "Form1";
-            //this.Text = "Calculate Routes From Major Roads Example";
-            //this.Load += new System.EventHandler(this.ProposedRouteForm2_Load);
-            //((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
-            //this.layoutControl1.ResumeLayout(false);
-            //((System.ComponentModel.ISupportInitialize)(this.teLongitude.Properties)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.teLatitude.Properties)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.cbeRouteOptimization.Properties)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.cbeTravelMode.Properties)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.mapControl)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.lciTravelMode)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.lciRouteOptimization)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.lciLatitude)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.lciLongitude)).EndInit();
-            //this.ResumeLayout(false);
+            // 
+            // ProposedRoute2Form
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(585, 491);
+            this.Controls.Add(this.mapControl1);
+            this.Controls.Add(this.ribbonStatusBar);
+            this.Controls.Add(this.ribbon);
+            this.Name = "ProposedRoute2Form";
+            this.Ribbon = this.ribbon;
+            this.StatusBar = this.ribbonStatusBar;
+            this.Text = "Proposed Route 2";
+            this.Load += new System.EventHandler(this.ProposedRouteForm2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mapControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
+            this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.teLongitude.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teLatitude.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbeRouteOptimization.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbeTravelMode.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mapControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciTravelMode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciRouteOptimization)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciLatitude)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lciLongitude)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

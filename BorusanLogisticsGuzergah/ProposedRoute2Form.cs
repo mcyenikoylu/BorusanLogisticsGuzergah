@@ -12,7 +12,7 @@ using DevExpress.XtraMap;
 
 namespace BorusanLogisticsGuzergah
 {
-    public partial class ProposedRouteForm2 : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class ProposedRoute2Form : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         const double minLat = -90;
         const double maxLat = 90;
@@ -25,7 +25,7 @@ namespace BorusanLogisticsGuzergah
         double lon = -120;
         BingRouteDataProvider routeProvider;
 
-        public ProposedRouteForm2()
+        public ProposedRoute2Form()
         {
             InitializeComponent();
         }

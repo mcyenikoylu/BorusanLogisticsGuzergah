@@ -15,6 +15,12 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_021EE1B9449149229993303EDCD36A55"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_288CBDCB037E1D4EC0CD9FAF521D27CC"
         "OwnerKey" = "8:_B9C0432EB18944C3A4E7BB44D53C5AC1"
         "MsmSig" = "8:_UNDEFINED"
@@ -183,6 +189,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_4722BD001FF448828DFD69655E9640A3"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_5D359C0A2CF6C8CC5A76C44CDFC2C28C"
         "OwnerKey" = "8:_3A58C6C19C947BF323E50EFFAE75134C"
         "MsmSig" = "8:_UNDEFINED"
@@ -303,6 +315,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_854DD1EE8EAB450EAA52B6ECEEE38C69"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_94DD1A8CE8ED106B4BB52178D82A0CA9"
         "OwnerKey" = "8:_B9C0432EB18944C3A4E7BB44D53C5AC1"
         "MsmSig" = "8:_UNDEFINED"
@@ -381,6 +399,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_BC96FF37AEC14A1CA8B52FA030189CCB"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_C0055EB96417945468D22C65B6BBA333"
         "OwnerKey" = "8:_288CBDCB037E1D4EC0CD9FAF521D27CC"
         "MsmSig" = "8:_UNDEFINED"
@@ -449,12 +473,6 @@
         {
         "MsmKey" = "8:_F7718593B8D63CA62FA2203257ABB16C"
         "OwnerKey" = "8:_671A4A768A7AFEC362DDC607F403A977"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_33E498E798D0BDB4C64ACCF3F053F1DD"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -559,6 +577,12 @@
         "OwnerKey" = "8:_5D359C0A2CF6C8CC5A76C44CDFC2C28C"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_33E498E798D0BDB4C64ACCF3F053F1DD"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -577,6 +601,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -643,6 +675,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_021EE1B9449149229993303EDCD36A55"
+            {
+            "SourcePath" = "8:..\\BorusanLogisticsGuzergah\\bin\\Debug\\Image\\3.png"
+            "TargetName" = "8:3.png"
+            "Tag" = "8:"
+            "Folder" = "8:_D5C34400F0DE42EC8C46A19996DFCE31"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_288CBDCB037E1D4EC0CD9FAF521D27CC"
             {
             "AssemblyRegister" = "3:1"
@@ -742,6 +794,26 @@
             "TargetName" = "8:Logo.ico"
             "Tag" = "8:"
             "Folder" = "8:_7685AC74628B457EA4C11C224DC1FB35"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4722BD001FF448828DFD69655E9640A3"
+            {
+            "SourcePath" = "8:..\\BorusanLogisticsGuzergah\\bin\\Debug\\Image\\2.png"
+            "TargetName" = "8:2.png"
+            "Tag" = "8:"
+            "Folder" = "8:_D5C34400F0DE42EC8C46A19996DFCE31"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -973,6 +1045,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_854DD1EE8EAB450EAA52B6ECEEE38C69"
+            {
+            "SourcePath" = "8:..\\BorusanLogisticsGuzergah\\bin\\Debug\\Image\\1.png"
+            "TargetName" = "8:1.png"
+            "Tag" = "8:"
+            "Folder" = "8:_D5C34400F0DE42EC8C46A19996DFCE31"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_94DD1A8CE8ED106B4BB52178D82A0CA9"
             {
             "AssemblyRegister" = "3:1"
@@ -1064,6 +1156,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BC96FF37AEC14A1CA8B52FA030189CCB"
+            {
+            "SourcePath" = "8:..\\BorusanLogisticsGuzergah\\bin\\Debug\\Image\\4.png"
+            "TargetName" = "8:4.png"
+            "Tag" = "8:"
+            "Folder" = "8:_D5C34400F0DE42EC8C46A19996DFCE31"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C0055EB96417945468D22C65B6BBA333"
@@ -1268,6 +1380,17 @@
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_D5C34400F0DE42EC8C46A19996DFCE31"
+                    {
+                    "Name" = "8:Image"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_A139E3BFA203476D8AB4FBFC57459E7E"
+                        "Folders"
+                        {
+                        }
+                    }
                 }
             }
             "{1525181F-901A-416C-8A58-119130FE478E}:_AE764A70276D4F78BFBF17B30244AC86"
@@ -1847,7 +1970,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_B9C0432EB18944C3A4E7BB44D53C5AC1"
             {
-            "SourcePath" = "8:..\\BorusanLogisticsGuzergah\\obj\\Release\\BorusanLogisticsGuzergah.exe"
+            "SourcePath" = "8:..\\BorusanLogisticsGuzergah\\obj\\Debug\\BorusanLogisticsGuzergah.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_7685AC74628B457EA4C11C224DC1FB35"

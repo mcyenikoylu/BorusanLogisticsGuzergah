@@ -33,6 +33,7 @@
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem1 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuRoadSurvey));
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem2 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem3 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.galleryControl1 = new DevExpress.XtraBars.Ribbon.GalleryControl();
@@ -121,10 +122,16 @@
             galleryItem1.ImageOptions.ImageIndex = 1;
             galleryItem1.Value = "200";
             galleryItem2.Caption = "Proposed Route 2";
+            galleryItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             galleryItem2.Value = "201";
+            galleryItem2.Visible = false;
+            galleryItem3.Caption = "Proposed Route 3";
+            galleryItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            galleryItem3.Value = "202";
             galleryItemGroup1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             galleryItem1,
-            galleryItem2});
+            galleryItem2,
+            galleryItem3});
             this.galleryControl1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
             galleryItemGroup1});
             this.galleryControl1.Gallery.ItemImageLayout = DevExpress.Utils.Drawing.ImageLayoutMode.ZoomInside;

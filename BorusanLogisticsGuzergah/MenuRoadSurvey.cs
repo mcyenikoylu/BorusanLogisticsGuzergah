@@ -41,7 +41,12 @@ namespace BorusanLogisticsGuzergah
             }
             else if (value == 201)
             {
-                ProposedRouteForm2 frm = new ProposedRouteForm2();
+                ProposedRoute2Form frm = new ProposedRoute2Form();
+                ButtonItemClickMethod(frm, 0);
+            }
+            else if (value == 202)
+            {
+                ProposedRoute3Form frm = new ProposedRoute3Form();
                 ButtonItemClickMethod(frm, 0);
             }
         }

@@ -89,11 +89,17 @@
     <Compile Include="ProposedRouteForm.Designer.cs">
       <DependentUpon>ProposedRouteForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProposedRouteForm2.cs">
+    <Compile Include="ProposedRoute2Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProposedRouteForm2.Designer.cs">
-      <DependentUpon>ProposedRouteForm2.cs</DependentUpon>
+    <Compile Include="ProposedRoute2Form.Designer.cs">
+      <DependentUpon>ProposedRoute2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProposedRoute3Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProposedRoute3Form.Designer.cs">
+      <DependentUpon>ProposedRoute3Form.cs</DependentUpon>
     </Compile>
     <Compile Include="RoadSurveyForm.cs">
       <SubType>Form</SubType>
@@ -133,8 +139,11 @@
     <EmbeddedResource Include="ProposedRouteForm.resx">
       <DependentUpon>ProposedRouteForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProposedRouteForm2.resx">
-      <DependentUpon>ProposedRouteForm2.cs</DependentUpon>
+    <EmbeddedResource Include="ProposedRoute2Form.resx">
+      <DependentUpon>ProposedRoute2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProposedRoute3Form.resx">
+      <DependentUpon>ProposedRoute3Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RoadSurveyForm.resx">
       <DependentUpon>RoadSurveyForm.cs</DependentUpon>
