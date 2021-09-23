@@ -59,10 +59,10 @@ namespace BorusanLogisticsGuzergah
 
         void GridLoad()
         {
-            ConnDBLocal(true);
+            Conn.ConnDBLocal(true);
 
             //Cursor.Current = Cursors.WaitCursor;
-            SqlCommand sqlCmd = new SqlCommand("S_WaypointsAll", dbLocal);
+            SqlCommand sqlCmd = new SqlCommand("S_WaypointsAll", Conn.dbLocal);
             sqlCmd.CommandTimeout = 30000;
             //sqlCmd.Parameters.AddWithValue("@ID", ComapnyID);
             //sqlCmd.Parameters.AddWithValue("@Cell", cell);
@@ -77,7 +77,7 @@ namespace BorusanLogisticsGuzergah
             //gridControl1.DataSource = ds;
             //gcDashboard.ItemsSource = ds;
 
-            ConnDBLocal(false);
+            Conn.ConnDBLocal(false);
 
             gridControl1.DataSource = dt;
 
@@ -109,10 +109,8 @@ namespace BorusanLogisticsGuzergah
             return builder.ToString();
         }
 
-        public static SqlConnection dbLocal = new SqlConnection();
-        public static string LocalDataSource = "(LocalDb)\\MSSQLLocalDB";
-        public static string LocalDatabase = "BLGDB";
-        public static string LocalAttachDbFilename = "|DataDirectory|\\BLGDB.mdf";
+       
+
         private void OnMapItemClick(object sender, MapItemClickEventArgs e)
         {
             //if (e.MouseArgs.Button == MouseButtons.Right && e.Item is MapPath)
@@ -136,29 +134,7 @@ namespace BorusanLogisticsGuzergah
 
        
 
-        public static bool ConnDBLocal(bool Connection)
-        {
-            try
-            {
-                if (Connection)
-                {
-                    string conn = "data source=" + LocalDataSource + ";AttachDbFilename=" + LocalAttachDbFilename + ";Initial Catalog=" + LocalDatabase + ";Integrated Security=True;";
-                    dbLocal.ConnectionString = conn;
-                    dbLocal.Open();
-                    return true;
-                }
-                else
-                {
-                    dbLocal.Close();
-                    return true;
-                }
-            }
-            catch (Exception ex)
-            {
-                //ExceptionMessage = ex.Message;
-                return false;
-            }
-        }
+      
 
         #region #CreateBubbles
         // Create a storage to provide data for the vector layer.

@@ -30,7 +30,9 @@ namespace BorusanLogisticsGuzergah
             lblKM.Text = dt.Rows[0].ItemArray[5].ToString();
             lblCoordinates.Text = dt.Rows[0].ItemArray[1].ToString() + " " + dt.Rows[0].ItemArray[2].ToString();
             lblDescriptions.Text = dt.Rows[0].ItemArray[6].ToString();
-            var path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase).Replace("file:\\","");
+            //var path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase).Replace("file:\\","");
+            var path = @"C:\bldb";
+
             string FileName = path + dt.Rows[0].ItemArray[7].ToString();
             pictureEdit1.Image = Image.FromFile(FileName);
         }
@@ -42,10 +44,10 @@ namespace BorusanLogisticsGuzergah
             //if (cell.Equals(""))
             //    cell = null;
 
-            WaypointForm.ConnDBLocal(true);
+            Conn.ConnDBLocal(true);
 
             //Cursor.Current = Cursors.WaitCursor;
-            SqlCommand sqlCmd = new SqlCommand("S_Waypoints", WaypointForm.dbLocal);
+            SqlCommand sqlCmd = new SqlCommand("S_Waypoints", Conn.dbLocal);
             sqlCmd.CommandTimeout = 30000;
             sqlCmd.Parameters.AddWithValue("@latitude", latitude);
             sqlCmd.Parameters.AddWithValue("@longitude", longitude);
@@ -62,7 +64,7 @@ namespace BorusanLogisticsGuzergah
             //gridControl1.DataSource = ds;
             //gcDashboard.ItemsSource = ds;
 
-            WaypointForm.ConnDBLocal(false);
+            Conn.ConnDBLocal(false);
 
             //Cursor.Current = Cursors.Default;
             return dt;

@@ -63,6 +63,7 @@
     <Compile Include="BubbleForm.Designer.cs">
       <DependentUpon>BubbleForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Conn.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,10 +170,18 @@
   <ItemGroup>
     <Content Include="Data\DashboardEnergyStatictics.xml" />
     <Content Include="Data\EuropeEnergyStatictics.xml" />
-    <Content Include="Image\1.png" />
-    <Content Include="Image\2.png" />
-    <Content Include="Image\3.png" />
-    <Content Include="Image\4.png" />
+    <Content Include="Image\1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\4.png" />
     <None Include="Resources\3.png" />
     <None Include="Resources\2.png" />
