@@ -9,6 +9,7 @@ namespace BorusanLogisticsGuzergah
 {
     public class Conn
     {
+        //local git test.
         public static SqlConnection dbLocal = new SqlConnection();
         public static string LocalDataSource = "(LocalDb)\\MSSQLLocalDB";
         public static string LocalDatabase = "BLGDB";
