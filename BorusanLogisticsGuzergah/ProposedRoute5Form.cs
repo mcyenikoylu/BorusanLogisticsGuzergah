@@ -21,6 +21,9 @@ namespace BorusanLogisticsGuzergah
 
         InformationLayer informationLayer = new InformationLayer();
         BingRouteDataProvider routeDataProvider = new BingRouteDataProvider();
+
+        InformationLayer informationLayer2 = new InformationLayer();
+
         private void ProposedRoute5Form_Load(object sender, EventArgs e)
         {
             try
@@ -47,12 +50,19 @@ namespace BorusanLogisticsGuzergah
                 informationLayer.DataProvider = routeDataProvider;
                 
                 searchDataProvider.SearchCompleted += OnSearchCompleted;
-                informationLayer.DataRequestCompleted += OnDataRequestCompleted;
+                informationLayer2.DataRequestCompleted += OnDataRequestCompleted;
                 searchDataProvider.BingKey = "Avvc7Zi1mbEsmv7IRo9TnNbP32cLralhqFq3AhC-JsaVXS_qymj9GPT8TdOynshZ";
 
-                informationLayer.DataProvider = searchDataProvider;
+                informationLayer2.DataProvider = searchDataProvider;
+
+
+                routeDataProvider.CalculateRoute(waypoints2);
+
 
                 mapControl1.Layers.Add(informationLayer);
+                mapControl1.Layers.Add(informationLayer2);
+
+                
 
                 textEdit1.Text = "1494. Sokak, Umurbey, alsancak, izmir";
             }
@@ -179,6 +189,40 @@ namespace BorusanLogisticsGuzergah
             //informationLayer.Data.Items.Add(pin);
             //waypoints2.Add(new RouteWaypoint("", (GeoPoint)mapControl1.ScreenPointToCoordPoint(e.Location)));
 
+        }
+
+        private MapPushpin mapItem;
+        private void mapControl1_MouseDown(object sender, MouseEventArgs e)
+        {
+            var hitInfo = mapControl1.CalcHitInfo(e.Location);
+            if (hitInfo.InMapPushpin)
+            {
+                mapControl1.EnableScrolling = false;
+                mapItem = hitInfo.HitObjects[0] as MapPushpin;
+            }
+        }
+
+        private void mapControl1_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (mapItem != null)
+            {
+                var point = mapControl1.ScreenPointToCoordPoint(new MapPoint(e.X, e.Y));
+                mapItem.Location = point;
+                mapControl1.EnableScrolling = true;
+                mapItem = null;
+
+                //waypoints2.Add(new RouteWaypoint("DisplayName", (GeoPoint)mapControl1.ScreenPointToCoordPoint(e.Location)));
+                //routeDataProvider.CalculateRoute(waypoints2);
+            }
+        }
+
+        private void mapControl1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mapItem != null)
+            {
+                var point = mapControl1.ScreenPointToCoordPoint(new MapPoint(e.X, e.Y));
+                mapItem.Location = point;
+            }
         }
     }
 }
