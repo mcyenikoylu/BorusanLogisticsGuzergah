@@ -74,5 +74,9 @@ namespace BorusanLogisticsGuzergah
             timer1.Enabled = true;
         }
 
+        private void ProposedRoute3Form_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

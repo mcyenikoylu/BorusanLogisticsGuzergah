@@ -19,7 +19,7 @@ namespace BorusanLogisticsGuzergah
         const double minLon = -180;
         const double maxLon = 180;
 
-        const string yourBingKey = "Insert Your Bing Key Here";//"Your Bing Key";
+        const string yourBingKey = "Avvc7Zi1mbEsmv7IRo9TnNbP32cLralhqFq3AhC-JsaVXS_qymj9GPT8TdOynshZ";//"Your Bing Key";
 
         double lat = 40;
         double lon = -120;
