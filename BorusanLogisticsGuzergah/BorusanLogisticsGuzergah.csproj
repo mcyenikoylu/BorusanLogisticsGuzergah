@@ -193,6 +193,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Logo.ico" />
+    <Content Include="pushpin-red.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\4.png" />
     <None Include="Resources\3.png" />
     <None Include="Resources\2.png" />

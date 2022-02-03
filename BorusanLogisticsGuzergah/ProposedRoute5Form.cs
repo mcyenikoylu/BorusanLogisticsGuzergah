@@ -48,13 +48,14 @@ namespace BorusanLogisticsGuzergah
                 routeDataProvider.RouteOptions.Mode = BingTravelMode.Driving;
                 
                 informationLayer.DataProvider = routeDataProvider;
-                
+                informationLayer.Name = "informationLayer";
+
                 searchDataProvider.SearchCompleted += OnSearchCompleted;
                 informationLayer2.DataRequestCompleted += OnDataRequestCompleted;
                 searchDataProvider.BingKey = "Avvc7Zi1mbEsmv7IRo9TnNbP32cLralhqFq3AhC-JsaVXS_qymj9GPT8TdOynshZ";
 
                 informationLayer2.DataProvider = searchDataProvider;
-
+                informationLayer2.Name = "informationLayer2";
 
                 routeDataProvider.CalculateRoute(waypoints2);
 
@@ -72,6 +73,8 @@ namespace BorusanLogisticsGuzergah
             }
         }
 
+        
+
         private void routeLayerItemsGenerating(object sender, LayerItemsGeneratingEventArgs e)
         {
             if (e.Cancelled || (e.Error != null)) return;
@@ -85,12 +88,18 @@ namespace BorusanLogisticsGuzergah
                 if (pushpin != null)
                 {
                     pushpin.Text = pushpinMarker++.ToString();
+                    //pushpin.TextColor = Color.Gold;
+                    //pushpin.TextGlowColor = Color.Gold;
+                    
+                    pushpin.Image = Image.FromFile("pushpin-red.png");
+                    pushpin.RenderOrigin = new MapPoint(0.5, 0.8);
+                    pushpin.TextOrigin = new Point(22, 14);
                 }
 
                 MapPolyline polyline = item as MapPolyline;
                 if (polyline != null)
                 {
-                    polyline.Stroke = Color.FromArgb(0xFF, 0x00, 0x72, 0xC6);
+                    polyline.Stroke = Color.Green; //Color.FromArgb(0xFF, 0x00, 0x72, 0xC6);
                     polyline.StrokeWidth = 4;
 
                 }
@@ -162,7 +171,11 @@ namespace BorusanLogisticsGuzergah
                 string[] locSip = loc.Split('[');
                 string[] locSip2 = locSip[1].Split(']');
                 string[] locSip3 = locSip2[0].Split(',');
-                waypoints2.Add(new RouteWaypoint("DisplayName", new GeoPoint(Convert.ToDouble(locSip3[0]), Convert.ToDouble(locSip3[1]))));
+
+                //Name:
+                string[] locName = loc.Split(':');
+                string name = locName[2].Replace("\r\nAddress", "").Trim();
+                waypoints2.Add(new RouteWaypoint(name, new GeoPoint(Convert.ToDouble(locSip3[0]), Convert.ToDouble(locSip3[1]))));
                 routeDataProvider.CalculateRoute(waypoints2);
             }
         }
@@ -211,8 +224,10 @@ namespace BorusanLogisticsGuzergah
                 mapControl1.EnableScrolling = true;
                 mapItem = null;
 
-                //waypoints2.Add(new RouteWaypoint("DisplayName", (GeoPoint)mapControl1.ScreenPointToCoordPoint(e.Location)));
-                //routeDataProvider.CalculateRoute(waypoints2);
+                waypoints2.RemoveAt(1);
+
+                waypoints2.Add(new RouteWaypoint("DisplayName", (GeoPoint)mapControl1.ScreenPointToCoordPoint(e.Location)));
+                routeDataProvider.CalculateRoute(waypoints2);
             }
         }
 
