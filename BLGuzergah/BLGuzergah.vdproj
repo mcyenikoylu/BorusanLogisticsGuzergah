@@ -201,6 +201,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_4F1C2480353949D38D822B312730B762"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_5D359C0A2CF6C8CC5A76C44CDFC2C28C"
         "OwnerKey" = "8:_3A58C6C19C947BF323E50EFFAE75134C"
         "MsmSig" = "8:_UNDEFINED"
@@ -736,11 +742,6 @@
             "AssemblyAsmDisplayName" = "8:DevExpress.XtraGrid.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_288CBDCB037E1D4EC0CD9FAF521D27CC"
-                    {
-                    "Name" = "8:DevExpress.XtraGrid.v18.2.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:DevExpress.XtraGrid.v18.2.dll"
             "TargetName" = "8:"
@@ -767,11 +768,6 @@
             "AssemblyAsmDisplayName" = "8:DevExpress.Data.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_33E498E798D0BDB4C64ACCF3F053F1DD"
-                    {
-                    "Name" = "8:DevExpress.Data.v18.2.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:DevExpress.Data.v18.2.dll"
             "TargetName" = "8:"
@@ -798,11 +794,6 @@
             "AssemblyAsmDisplayName" = "8:DevExpress.Printing.v18.2.Core, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_3A58C6C19C947BF323E50EFFAE75134C"
-                    {
-                    "Name" = "8:DevExpress.Printing.v18.2.Core.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:DevExpress.Printing.v18.2.Core.dll"
             "TargetName" = "8:"
@@ -862,6 +853,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4F1C2480353949D38D822B312730B762"
+            {
+            "SourcePath" = "8:..\\BorusanLogisticsGuzergah\\pushpin-red.png"
+            "TargetName" = "8:pushpin-red.png"
+            "Tag" = "8:"
+            "Folder" = "8:_7685AC74628B457EA4C11C224DC1FB35"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_5D359C0A2CF6C8CC5A76C44CDFC2C28C"
             {
             "AssemblyRegister" = "3:1"
@@ -869,11 +880,6 @@
             "AssemblyAsmDisplayName" = "8:DevExpress.Pdf.v18.2.Core, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_5D359C0A2CF6C8CC5A76C44CDFC2C28C"
-                    {
-                    "Name" = "8:DevExpress.Pdf.v18.2.Core.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:DevExpress.Pdf.v18.2.Core.dll"
             "TargetName" = "8:"
@@ -900,11 +906,6 @@
             "AssemblyAsmDisplayName" = "8:DevExpress.Map.v18.2.Core, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_61825916755893D39FF647F2A87166BE"
-                    {
-                    "Name" = "8:DevExpress.Map.v18.2.Core.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:DevExpress.Map.v18.2.Core.dll"
             "TargetName" = "8:"
@@ -931,11 +932,6 @@
             "AssemblyAsmDisplayName" = "8:DevExpress.XtraTreeList.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_61D7AA26FBEDA64764B00D66D8C4AB8F"
-                    {
-                    "Name" = "8:DevExpress.XtraTreeList.v18.2.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:DevExpress.XtraTreeList.v18.2.dll"
             "TargetName" = "8:"
@@ -962,11 +958,6 @@
             "AssemblyAsmDisplayName" = "8:DevExpress.XtraEditors.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_671A4A768A7AFEC362DDC607F403A977"
-                    {
-                    "Name" = "8:DevExpress.XtraEditors.v18.2.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:DevExpress.XtraEditors.v18.2.dll"
             "TargetName" = "8:"
@@ -993,11 +984,6 @@
             "AssemblyAsmDisplayName" = "8:DevExpress.Office.v18.2.Core, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_71E75EF726298351B24B30C17E7E1D74"
-                    {
-                    "Name" = "8:DevExpress.Office.v18.2.Core.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:DevExpress.Office.v18.2.Core.dll"
             "TargetName" = "8:"
@@ -1024,11 +1010,6 @@
             "AssemblyAsmDisplayName" = "8:DevExpress.RichEdit.v18.2.Core, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_7AC586A26E4501D6BD97072F60C83782"
-                    {
-                    "Name" = "8:DevExpress.RichEdit.v18.2.Core.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:DevExpress.RichEdit.v18.2.Core.dll"
             "TargetName" = "8:"
@@ -1055,11 +1036,6 @@
             "AssemblyAsmDisplayName" = "8:DevExpress.Images.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_8501F29E25861EC0A1F66CE481EA6B4C"
-                    {
-                    "Name" = "8:DevExpress.Images.v18.2.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:DevExpress.Images.v18.2.dll"
             "TargetName" = "8:"
@@ -1106,11 +1082,6 @@
             "AssemblyAsmDisplayName" = "8:DevExpress.XtraMap.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_94DD1A8CE8ED106B4BB52178D82A0CA9"
-                    {
-                    "Name" = "8:DevExpress.XtraMap.v18.2.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:DevExpress.XtraMap.v18.2.dll"
             "TargetName" = "8:"
@@ -1137,11 +1108,6 @@
             "AssemblyAsmDisplayName" = "8:DevExpress.XtraBars.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_AF6AB7302607305FD6A3AA183880940B"
-                    {
-                    "Name" = "8:DevExpress.XtraBars.v18.2.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:DevExpress.XtraBars.v18.2.dll"
             "TargetName" = "8:"
@@ -1168,11 +1134,6 @@
             "AssemblyAsmDisplayName" = "8:DevExpress.Utils.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_B5AE058ED35F2ED2DC0EF2C952DD706B"
-                    {
-                    "Name" = "8:DevExpress.Utils.v18.2.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:DevExpress.Utils.v18.2.dll"
             "TargetName" = "8:"
@@ -1219,11 +1180,6 @@
             "AssemblyAsmDisplayName" = "8:DevExpress.XtraPrinting.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_C0055EB96417945468D22C65B6BBA333"
-                    {
-                    "Name" = "8:DevExpress.XtraPrinting.v18.2.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:DevExpress.XtraPrinting.v18.2.dll"
             "TargetName" = "8:"
@@ -1290,11 +1246,6 @@
             "AssemblyAsmDisplayName" = "8:DevExpress.BonusSkins.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_D7F8260A5F5DB58400891C7BE7C257D2"
-                    {
-                    "Name" = "8:DevExpress.BonusSkins.v18.2.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:DevExpress.BonusSkins.v18.2.dll"
             "TargetName" = "8:"
@@ -1321,11 +1272,6 @@
             "AssemblyAsmDisplayName" = "8:DevExpress.XtraLayout.v18.2, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_F1EFAA70DD13720DDEA1003EF33D4420"
-                    {
-                    "Name" = "8:DevExpress.XtraLayout.v18.2.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:DevExpress.XtraLayout.v18.2.dll"
             "TargetName" = "8:"
@@ -1352,11 +1298,6 @@
             "AssemblyAsmDisplayName" = "8:DevExpress.Sparkline.v18.2.Core, Version=18.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_F7718593B8D63CA62FA2203257ABB16C"
-                    {
-                    "Name" = "8:DevExpress.Sparkline.v18.2.Core.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:DevExpress.Sparkline.v18.2.Core.dll"
             "TargetName" = "8:"
@@ -1454,15 +1395,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:BLGuzergah"
-        "ProductCode" = "8:{12840712-6603-45F7-91BF-ABD7ACF20071}"
-        "PackageCode" = "8:{20409CD5-890B-4E83-A361-3F91E4DB6424}"
+        "ProductCode" = "8:{30B65DFD-AB1F-4EE1-A23A-8D2467800E2A}"
+        "PackageCode" = "8:{95407A50-7FAF-409F-9A9B-38F1F89629CA}"
         "UpgradeCode" = "8:{90786CD6-A437-46DB-806D-D96EBD21AC01}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.4"
+        "ProductVersion" = "8:1.0.5"
         "Manufacturer" = "8:Borusan Logistics"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
